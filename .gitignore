@@ -1,0 +1,10 @@
+# local environments
+.swp
+.env*
+/dist/
+/build/
+/node_modules/
+/lhci_reports/
+
+# hugo
+.hugo_build.lock
