@@ -1,5 +1,5 @@
 
-baseURL = "http://localhost"
+baseURL = "https://miepee.github.io/AM2R-Modding-Wiki/"
 title = "AM2R Modding Wiki"
 theme = "hugo-geekdoc"
 
