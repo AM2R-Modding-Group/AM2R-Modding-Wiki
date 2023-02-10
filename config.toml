@@ -56,7 +56,7 @@ enableRobotsTXT = true
 
   # (Optional, default none) Set source repository location. Used for 'Edit page' links.
   # You can also specify this parameter per page in front matter.
-  geekdocRepo = "https://miepee.github.io/AM2R-Modding-Wiki/"
+  geekdocRepo = "https://github.com/Miepee/AM2R-Modding-Wiki"
 
   # (Optional, default none) Enable 'Edit page' links. Requires 'GeekdocRepo' param
   # and the path must point to the parent directory of the 'content' folder.
