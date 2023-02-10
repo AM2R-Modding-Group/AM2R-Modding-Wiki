@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AM2R Modding Wiki</title>
+    <link>https://miepee.github.io/AM2R-Modding-Wiki/useful-links/</link>
+    <description>Recent content on AM2R Modding Wiki</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://miepee.github.io/AM2R-Modding-Wiki/useful-links/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Chats</title>
+      <link>https://miepee.github.io/AM2R-Modding-Wiki/useful-links/chats/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://miepee.github.io/AM2R-Modding-Wiki/useful-links/chats/</guid>
+      <description>Links to places where you can chat about modding AM2R.
+AM2R Discord The Official AM2R Discord Server. It&amp;rsquo;s also bridged with the AM2R Matrix Space.
+https://discord.gg/YTQnkAJ
+AM2R Matrix Space The Official AM2R Matrix Space. It&amp;rsquo;s also bridged with the AM2R Discord.
+https://matrix.to/#/#am2r:matrix.org
+AM2R Modding Discord The Discord server for all things modding related. Modding related inqueries will likely get faster answers here than in the AM2R Discord, as well as it being a bit more organized.</description>
+    </item>
+    
+    <item>
+      <title>Tools</title>
+      <link>https://miepee.github.io/AM2R-Modding-Wiki/useful-links/tools/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://miepee.github.io/AM2R-Modding-Wiki/useful-links/tools/</guid>
+      <description>A list of tools that are useful for AM2R Modding
+UndertaleModTool Download: https://github.com/krzys-h/UndertaleModTool/releases
+UndertaleModTool (often abbreviated as UMT or UTMT) lets you change GameMaker asset files. This is your primary modding tool.
+Glenn Download: https://github.com/Miepee/Glenn/releases
+Glenn lets you able to port your Mod to Windows, Linux, Android and Mac.
+Atomic Download: https://github.com/AM2R-Community-Developers/Atomic/releases
+Atomic makes your mods AM2RLauncher compatible, so that other people can properly install them.
+Anna Download: https://github.com/Miepee/Anna/releases
+Anna is a resource pack manager for AM2RLauncher profiles.</description>
+    </item>
+    
+  </channel>
+</rss>
