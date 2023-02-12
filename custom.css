@@ -1,1 +1,4 @@
-/* You can add custom styles here. */
+.gdoc-markdown hr {
+    height: 5px;
+    border-radius: 15rem;
+}
