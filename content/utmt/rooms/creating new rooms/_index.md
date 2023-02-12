@@ -17,9 +17,9 @@ resources:
   - name: viewsSetup
     src: "viewsSetup.png"
     title: This is how the Views should look like.
-  - name: sceenGuideSetup
-    src: "sceenGuideSetup.png"
-    title: This is what is should like after setting up the bgScreenGuide Element 
+  - name: screenGuideSetup
+    src: "screenGuideSetup.png"
+    title: This is what it should look like after setting up the `bgScreenGuide` element 
 ---
 
 TODO: having some more screenshots in here would be nice. Also fix some phrasing.
@@ -44,11 +44,13 @@ UTMT does not sort things alphabetically. Instead it always puts the newest addi
 
 Once you have your set room size click on one of the `(no name)` elements under the backgrounds tab. Set a background by searching for `bgScreenGuide` and drag-and-droppig it into the `Definition` Space of the `(no name)` element. Enable the background afterwards. 
 
-{{< img name="screenGuideSetup" size="original" >}}
-
 Next, click on the `Views` category, and then click on the first View. Set its `Pos/size` values to `0, 0, 320, 240`, regardless of room size. Set the `Port pos/size` values to `0, 0, 320, 240` as well. Set `Border` values to `160, 160`. Make sure `Speed` values are at `-1, -1`. Lastly, to make the camera follow the player, put `oCamera` into the `Follows object` box.  
 
+{{<columns>}}
+{{< img name="screenGuideSetup" size="original" >}}
+<--->
 {{< img name="viewsSetup" size="origin" >}}
+{{</columns>}}
 
 Now we come to actually laying out and "building" your room. For this, there are two main steps; Setting up Collision and Tiling. 
 It is generally recommended to do tiling first, as UTMT will always put the visuals for collision blocks in the foreground, meaning that doing tiling afterwards is a horrible experience. 
