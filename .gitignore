@@ -5,6 +5,7 @@
 /build/
 /node_modules/
 /lhci_reports/
+/resources/
 
 # hugo
 .hugo_build.lock
