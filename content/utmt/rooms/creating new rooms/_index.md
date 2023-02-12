@@ -8,14 +8,38 @@ resources:
   - name: optimalRoomSide
     src: "optimalRoomSide.png"
     title: Optimal placing for left and right transitions
+  - name: RoomSetup
+    src: "RoomSetup.png"
+    title: This is how it should look now
+  - name: RoomOnCreate
+    src: "RoomOnCreate.png"
+    title: This is how it will look when first adding a new room
+  - name: ViewsSetup
+    src: "ViewsSetup.png"
+    title: If you've done everything correctly this is how it should look 
 ---
 
 TODO: having some more screenshots in here would be nice. Also fix some phrasing.
 
 ### Preparation:
-When creating a new room, the dimensions __must__ be multiples of `320` x `240`. Having different room dimensions will cause lots of troubles. Also make sure that the room's room speed is set to `60` as that's what AM2R runs at. Entering different values will lead to the room being slowed-down or sped up.  
-Once you have your set room size, set a background by putting `bgScreenGuide` in one of the background definitions by dragging and dropping it from the left. Enable the background afterwards.  
+Before we set up tiles or textures, we must first make some preperations, to get started, create a new room by right clicking on `Rooms` in the file viewer on the left and then click add. Now you will see 3 things; 
+A list of all the ojects that are in your room
+A set of values, corresponding to the object in your room that you currently have selected
+A Visual overview of your room, if you're adding a new room, this will be completely black with a grey grid.
+
+{{< img name="RoomOnCreate" size=origin >}}
+
+When creating a new room, make __absolutely__ sure the dimensions are multiples of `320` x `240`. Having different room dimensions will cause lots of troubles. Also make sure that the room's room speed is set to `60` as that's the Framerate what AM2R runs at. Entering different values will lead to the room being slowed-down or sped up.  
+Once you have your set room size, set a background by searching for `bgScreenGuide` and putting it in one of the background definitions by dragging and dropping it from the left. Enable the background afterwards.  
+You probably also want to give your room a name, for this, it is recommended to follow the naming convention of all the other rooms in the game, meaning that you start with `rm_` then the area your room belongs to (`a0`, `a1`, `a2`, etc..), a letter to denote which subsection of that area you are in (`h` for outside, and then `a`, `b`, etc...) and finally the number of the room itself (`01`, `02`, `03`, etc...) 
+e. g. If you were adding a Room inside Golden Temple, you would name it something like `rm_a1a13` 
+Note that UTMT does not sort things alphabetically, but instead always puts the newest addition at the bottom of the folder
+
+{{< img name="RoomSetup" size=origin >}}
+
 Next, click on the `Views` category, and then click on the first View. Set its `Pos/size` values to `0, 0, 320, 240`, regardless of room size. Set the `Port pos/size` values to `0, 0, 320, 240` as well. Set `Border` values to `160, 160`. Make sure `Speed` values are at `-1, -1`. Lastly, to make the camera follow the player, put `oCamera` into the `Follows object` box.  
+
+{{< img name="ViewsSetup" size=origin >}}
 
 You are now ready to start building your room. On the left `Filter by name...` box, search for `solid`. There, all the solid collision blocks under the `Game objects` category are to be added by dragging and dropping them onto the room. For puzzles and other uses, you can also search for `missile`, `bomb`, `super missile` and other destroyable blocks. Keep in mind that these blocks, as well as solid blocks, are invisible and do not appear without putting tiles over them or giving them creation code.  
 Now, your room's collision and destroyable blocks are all layed out. In-game, you will see nothing in your room, but you will able to collide with the blocks and break them as usual. To give your room form, you can put tiles from the many different tilesets. Each tile is added individually, so this will be a slow process. Each unit or block that represents a tile is 16 x 16 pixels large, and can be selected manually by setting the source position and size or clicking on what tile you want, however the latter option is sometimes not as good for tilesets that aren't limited to blocks. It is recommended to use an image editor to find the coordinates of specific points for the former option. Tiles that are a multiple of 16x16 can be selected by holding `ALT` while click-dragging over the tileset thumbnail in the tile's properties.
