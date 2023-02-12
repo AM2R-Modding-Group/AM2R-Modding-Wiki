@@ -47,7 +47,7 @@ Once you have your set room size click on one of the `(no name)` elements under 
 Next, click on the `Views` category, and then click on the first View. Set its `Pos/size` values to `0, 0, 320, 240`, regardless of room size. Set the `Port pos/size` values to `0, 0, 320, 240` as well. Set `Border` values to `160, 160`. Make sure `Speed` values are at `-1, -1`. Lastly, to make the camera follow the player, put `oCamera` into the `Follows object` box.  
 
 {{<columns>}}
-{{< img name="screenGuideSetup" size="original" >}}
+{{< img name="screenGuideSetup" size="origin" >}}
 <--->
 {{< img name="viewsSetup" size="origin" >}}
 {{</columns>}}
