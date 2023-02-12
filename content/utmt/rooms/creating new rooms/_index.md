@@ -55,6 +55,17 @@ Next, click on the `Views` category, and then click on the first View. Set its `
 Now we come to actually laying out and "building" your room. For this, there are two main steps; Setting up Collision and Tiling. 
 It is generally recommended to do tiling first, as UTMT will always put the visuals for collision blocks in the foreground, meaning that doing tiling afterwards is a horrible experience. 
 To give your room form, you can put tiles from the many different tilesets. Each tile is added individually, so this will be a slow process. Each unit or block that represents a tile is 16 x 16 pixels large, and can be selected manually by setting the source position and size or clicking on what tile you want, however the latter option is sometimes not as good for tilesets that aren't limited to blocks. It is recommended to use an image editor to find the coordinates of specific points for the former option. Tiles that are a multiple of 16x16 can be selected by holding `ALT` while click-dragging over the tileset thumbnail in the tile's properties.
+Take note of the depth variable when adding tiles. Since UTMT does not have a layer system, this value is what decides what tiles are in the foreground and which are in the background, with lower values being shown in front of higher values.
+
+{{< hint type="tip">}}
+Here are some depth values to take note of:
+- Backgrounds: 100
+- Samus: -1
+- Foreground: -100
+- Breakable Blocks: -111/-112
+- Fading Tiles: -120
+{{</hint>}}
+
 You are now ready to start building your room. On the left `Filter by name...` box, search for `solid`. There, all the solid collision blocks under the `Game objects` category are to be added by dragging and dropping them onto the room. For puzzles and other uses, you can also search for `missile`, `bomb`, `super missile` and other destroyable blocks. Keep in mind that these blocks, as well as solid blocks, are invisible and do not appear without putting tiles over them or giving them creation code.  
 Now, your room's collision and destroyable blocks are all layed out. In-game, you will see nothing in your room, but you will able to collide with the blocks and break them as usual. 
 
