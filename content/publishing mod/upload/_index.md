@@ -1,6 +1,23 @@
 ---
 title: Upload your Mod
 weight: 3
+
+resources:
+  - name: createRepo
+    src: "createRepo.png"
+    title: Create a new Repository
+  - name: createRepoDetail
+    src: "createRepoDetail.png"
+    title: Example of a new Repository screen
+  - name: createRelease
+    src: "createRelease.png"
+    title: Create a new Release
+  - name: createReleaseDetail
+    src: "createReleaseDetail.png"
+    title: Example of a new Release screen
+  - name: editRelease
+    src: "editRelease.png"
+    title: Edit a Release
 ---
 
 TODO: use hugo image resources for these, instead of gist references
@@ -16,7 +33,7 @@ First, you need to create an account and the repository:
 1. Create an Account if you haven't yet.
 
 2. Log into the Account, click on the `+` icon in the upper right corner, and then click on the `Create a new Repository` option.  
-![grafik](https://user-images.githubusercontent.com/38186597/209194560-9a36a2c6-3dba-4309-8244-c8735dad35c3.png)
+{{<img name="createRepo" size="origin">}}
 
 3. Enter the name of your mod as the repository and a short one-two sentences description. *Make sure to check the `Add a Readme file` option*.
     - You can also change the visibility to `Private` here, if you intend to release mods for a selected testing team.
@@ -25,13 +42,13 @@ It's always possible to change visibility later.
 in case you want to add code to your repo TODO: this thing
 
     It should look somewhat like this:  
-    ![grafik](https://user-images.githubusercontent.com/38186597/209194697-3f89535c-2bcf-4001-b4bb-ea11696a74c9.png)
+    {{<img name="createRepoDetail" size="origin">}}
 
 Now that the repository is created, you should see a page with your readme, and some info on the right. If that is not the case, you probably missed something in the instructions above. Feel free to click at the top on `Settings` Tab, scroll down to the bottom, delete the repository, and try again.  
 If everything looks as expected, continue with publishing your release:
 
 4. At the right side, right under `Releases`, click on the `Create a new Release` link.  
-![grafik](https://user-images.githubusercontent.com/38186597/209195049-a27d5b91-97bc-458e-8ae0-93afa68fea2e.png)
+{{<img name="createRelease" size="origin">}}
 
 
 5. Choose a Tag, a Release title, and a Release Description. Additionally, put your AM2RLauncher Mod(s) zips into the 
@@ -41,7 +58,7 @@ then click on `Create new tag on publish`
     - You can also mark releases as "Beta" essentially, by checking the `Set as pre-release` option
 
     A release can look somewhat like this:  
-    ![grafik](https://user-images.githubusercontent.com/38186597/209195883-06d4ccac-c36f-4a5c-84e6-0efbc5cee4a0.png)
+    {{<img name="createReleaseDetail" size="origin">}}
 
 
 That's it! You have now uploaded your first Mod Release.
@@ -49,6 +66,6 @@ That's it! You have now uploaded your first Mod Release.
 If you wish to upload a new version of your Mod, open the URL for your Mod, and then just start at Step 4.
 
 If you noticed after publishing a release, that you missed something in the description or forgot to upload another asset, you are able to edit the release by clicking the edit pencil in the upper right corner:  
-![grafik](https://user-images.githubusercontent.com/38186597/209441901-b3c97d3c-5252-45b7-a4a4-dac969288b69.png)  
+{{<img name="editRelease" size="origin">}}  
 
 If you wish to change the name/description of your repository or the readme, you're able to do that at any time. For the name/description you can do so from the `Settings` Tab at the top, for the readme you can do so from by clicking the edit pencil in the upper right corner.

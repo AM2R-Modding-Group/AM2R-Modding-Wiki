@@ -1,12 +1,19 @@
 ---
 title: Preparing
 weight: 0
+resources:
+  - name: structureWin
+    src: "structureWin.png"
+    title: Windows AM2R Mod folder structure
+  
 ---
 
 If you create your mod with UndertaleModTool, then the very first step you need to do, is create a zip of all files that are necesary for your mod. 
 The procedure usually is as follows:
 1. Navigate to the folder where you have your mod. The structure (On Windows) should look like this:  
-![windows am2r mod folder file structure](https://user-images.githubusercontent.com/38186597/209172505-9010db7c-ac27-49b8-a6bd-935cda66d619.png)  
+
+{{< img name="structureWin" size="origin" >}}
+
 (TODO: when modding on non-windows becomes more prominent, post structure on Linux/Mac/Android too)
 
 2. Select all files in there. If there is a file called `profile.xml` in there, *unselect it*. 
