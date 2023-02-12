@@ -21,7 +21,7 @@ Here are some depth values to take note of:
 - Samus: -1
 - Foreground: -100
 - Breakable Blocks: -111/-112
-- Fading Tiles: -120 (Do not work without a oFadeTiles object, explained later)
+- Fading Tiles: -120 (Do not work without an `oFadeTiles` object)
 {{</hint>}}
 
 You are now ready to start building your room. On the left `Filter by name...` box, search for `solid`. There, all the solid collision blocks under the `Game objects` category are to be added by dragging and dropping them onto the room. For puzzles and other uses, you can also search for `missile`, `bomb`, `super missile` and other destroyable blocks. Keep in mind that these blocks, as well as solid blocks, are invisible and do not appear without putting tiles over them or giving them creation code.  
