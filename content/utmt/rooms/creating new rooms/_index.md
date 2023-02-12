@@ -33,8 +33,8 @@ Before we set up tiles or textures, we must first make some preperations. To get
 
 {{< img name="roomOnCreate" size="small" >}}
 
-When creating a new room, make __absolutely__ sure the dimensions are multiples of `320` x `240`. Having different room dimensions will cause lots of troubles. Also make sure that the room's room speed (`Speed`) is set to `60` as that's the framerate AM2R runs at. Entering different values will lead to the room being slowed-down or sped up.  
-You probably also want to give your room a name. For this, it is recommended to follow the naming convention of all the other rooms in the game: start with `rm_`, then the area your room belongs to (`a0`, `a1`, `a2`, etc..), a letter to denote which subsection of that area you are in (`h` for outside, and then `a`, `b`, etc.) and finally the number of the room itself (`01`, `02`, `03`, etc...).  
+When creating a new room, make __absolutely__ sure the dimensions are multiples of `320` x `240`. Having different room dimensions will cause lots of troubles. Also make sure that the room speed (`Speed`) is set to `60` as that's the framerate AM2R runs at. Entering different values will lead to the room being slowed-down or sped up.  
+You probably also want to give your room a name. For this, it is recommended to follow the naming convention of all the other rooms in the game: start with `rm_`, then the area your room belongs to (`a0`, `a1`, `a2`, etc.), a letter to denote which subsection of that area you are in (`h` for outside, and then `a`, `b`, etc.) and finally the number of the room itself (`01`, `02`, `03`, etc.).  
 If you were adding a room inside Golden Temple for example, you would name it something like `rm_a1a13`. But of course you can use any names you like.  
 {{< hint type="note">}}
 UTMT does not sort things alphabetically. Instead it always puts the newest addition at the bottom of the list. This means that, if you're not making multiple rooms at a time, your current room will always be at the bottom of the list.
