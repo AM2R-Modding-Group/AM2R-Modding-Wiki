@@ -1,56 +1,14 @@
-
 ---
 title: Creating new rooms
-resources: 
+resources:
   - name: optimalRoomUp
     src: "optimalRoomUp.png"
     title: Optimal placing for up and down transitions
   - name: optimalRoomSide
     src: "optimalRoomSide.png"
-    title: Optimal placing for left and right transitions
-  - name: roomSetup
-    src: "roomSetup.png"
-    title: This is approximately how the room should look after the preparation
-  - name: roomOnCreate
-    src: "roomOnCreate.png"
-    title: This is how it will look when first adding a new room
-  - name: viewsSetup
-    src: "viewsSetup.png"
-    title: This is how the Views should look like.
-  - name: screenGuideSetup
-    src: "screenGuideSetup.png"
-    title: This is what it should look like after setting up the `bgScreenGuide` element 
 ---
 
 TODO: having some more screenshots in here would be nice. Also fix some phrasing.
-
-
-## Preparation
-Before we set up tiles or textures, we must first make some preperations. To get started, create a new room by right-clicking on `Rooms` in the viewer on the left and then click `add`. Now you will see 3 things;
-- A list of all objects that are in your room.
-- A set of values, corresponding to the element that you currently have selected.
-- A visual overview of your room. If you're adding a new room, this will be completely black with a grey grid.
-
-{{< img name="roomOnCreate" size="small" >}}
-
-When creating a new room, make __absolutely__ sure the dimensions are multiples of `320` x `240`. Having different room dimensions will cause lots of troubles. Also make sure that the room speed (`Speed`) is set to `60` as that's the framerate AM2R runs at. Entering different values will lead to the room being slowed-down or sped up.  
-You probably also want to give your room a name. For this, it is recommended to follow the naming convention of all the other rooms in the game: start with `rm_`, then the area your room belongs to (`a0`, `a1`, `a2`, etc.), a letter to denote which subsection of that area you are in (`h` for outside, and then `a`, `b`, etc.) and finally the number of the room itself (`01`, `02`, `03`, etc.).  
-If you were adding a room inside Golden Temple for example, you would name it something like `rm_a1a13`. But of course you can use any names you like.  
-{{< hint type="note">}}
-UTMT does not sort things alphabetically. Instead it always puts the newest addition at the bottom of the list. This means that, if you're not making multiple rooms at a time, your current room will always be at the bottom of the list.
-{{</hint>}}
-
-{{< img name="roomSetup" size="origin" >}}
-
-Once you have your set room size click on one of the `(no name)` elements under the backgrounds tab. Set a background by searching for `bgScreenGuide` and drag-and-droppig it into the `Definition` Space of the `(no name)` element. Enable the background afterwards. 
-
-Next, click on the `Views` category, and then click on the first View. Set its `Pos/size` values to `0, 0, 320, 240`, regardless of room size. Set the `Port pos/size` values to `0, 0, 320, 240` as well. Set `Border` values to `160, 160`. Make sure `Speed` values are at `-1, -1`. Lastly, to make the camera follow the player, put `oCamera` into the `Follows object` box.  
-
-{{<columns>}}
-{{< img name="screenGuideSetup" size="origin" >}}
-<--->
-{{< img name="viewsSetup" size="origin" >}}
-{{</columns>}}
 
 Now we come to actually laying out and "building" your room. For this, there are two main steps; Setting up Collision and Tiling. 
 It is generally recommended to do tiling first, as UTMT will always put the visuals for collision blocks in the foreground, meaning that doing tiling afterwards is a horrible experience. 
@@ -63,7 +21,7 @@ Here are some depth values to take note of:
 - Samus: -1
 - Foreground: -100
 - Breakable Blocks: -111/-112
-- Fading Tiles: -120
+- Fading Tiles: -120 (Do not work without a oFadeTiles object, explained later)
 {{</hint>}}
 
 You are now ready to start building your room. On the left `Filter by name...` box, search for `solid`. There, all the solid collision blocks under the `Game objects` category are to be added by dragging and dropping them onto the room. For puzzles and other uses, you can also search for `missile`, `bomb`, `super missile` and other destroyable blocks. Keep in mind that these blocks, as well as solid blocks, are invisible and do not appear without putting tiles over them or giving them creation code.  
