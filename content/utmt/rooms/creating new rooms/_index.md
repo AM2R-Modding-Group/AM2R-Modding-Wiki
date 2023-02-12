@@ -29,7 +29,7 @@ TODO: having some more screenshots in here would be nice. Also fix some phrasing
 Before we set up tiles or textures, we must first make some preperations. To get started, create a new room by right-clicking on `Rooms` in the viewer on the left and then click `add`. Now you will see 3 things;
 - A list of all objects that are in your room.
 - A set of values, corresponding to the element that you currently have selected.
-- A Visual overview of your room. If you're adding a new room, this will be completely black with a grey grid.
+- A visual overview of your room. If you're adding a new room, this will be completely black with a grey grid.
 
 {{< img name="roomOnCreate" size="small" >}}
 
