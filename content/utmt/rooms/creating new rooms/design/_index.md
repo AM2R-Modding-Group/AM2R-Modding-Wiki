@@ -5,10 +5,12 @@ weight: 1
 
 TODO: having some more screenshots in here would be nice. Also fix some phrasing.
 
-Now we come to actually laying out and "building" your room. For this, there are two main steps; Setting up Collision and Tiling. 
+Now we come to actually laying out and "building" your room. For this, there are two main steps; Setting up collision and tiling.
+{{< hint type="tip">}}
 It is generally recommended to do tiling first, as UTMT will always put the visuals for collision blocks in the foreground, meaning that doing tiling afterwards is a horrible experience.
-To give your room form, you can put tiles from the many different tilesets. Each tile is added individually by right clicking in the tiles section, selecting add new tile, and then dragging the tile set that you want to use over from the left. This will be a slow process. Each unit or block that represents a tile is 16 x 16 pixels large, and can be selected manually by setting the source position and size or clicking on what tile you want, however the latter option is sometimes not as good for tilesets that aren't limited to blocks. It is recommended to use an image editor to find the coordinates of specific points for the former option. Tiles that are a multiple of 16x16 can be selected by holding `ALT` while click-dragging over the tileset thumbnail in the tile's properties.
-Take note of the depth variable when adding tiles. Since UTMT does not have a layer system, this value is what decides what tiles are in the foreground and which are in the background, with lower values being shown in front of higher values.
+{{</hint>}}
+To give your room form, you can place tiles from the many different tilesets. Each tile is added individually by right clicking in the tiles section, selecting `add new tile`, and then dragging the tileset that you want to use over from the left into the definition. This will be a slow process. Each unit or block that represents a tile is 16x16 pixels pixels large, and can be selected manually by setting the source position and size or selected automatically by clicking on the tile you want. However the latter option is sometimes not as good for tilesets which aren't limited to blocks. It is helpful to use an image editor to find the coordinates of specific points for the former option. Tiles that are a multiple of 16x16 can be selected by holding `ALT` while dragging over the tileset thumbnail in the tile's properties.
+Take note of the depth variable when adding tiles. Since UTMT does not have a layer system, this value is what decides which tiles are in the foreground and which are in the background, with lower values being shown in front of higher values.
 
 {{< hint type="tip">}}
 Here are some depth values to take note of:
