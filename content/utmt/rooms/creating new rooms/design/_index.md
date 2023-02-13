@@ -46,8 +46,8 @@ Here are some depth values to take note of:
 - Fading Tiles: -120 (Do not work without an `oFadeTiles` object)
 {{</hint>}}
 
-Something you can use to make the tiling process a lot faster is to copy existing tiles by holding alt and dragging them around the room. This will copy everything from that tile, including depth and tileset. This drastically speeds up the tiling process.  
-It is recommended to start with the tiles that the player will actually interact with, then adding stuff outside the playable area and background decorations.
+Something you can use to make the tiling process a lot faster is to duplicate existing tiles by holding `ALT` while click-dragging them in the room preview. This will copy everything from that tile, including `depth` and `tileset`. This drastically speeds up the tiling process, as you then don't have to manually assign the same values to every tile.^
+It is recommended to start with the tiles that the player will interact with, then adding stuff outside the playable area and lastly the background decorations.
 
 {{<columns>}}
 {{< img name="initialTiling" size=origin >}}
@@ -57,31 +57,29 @@ It is recommended to start with the tiles that the player will actually interact
 {{< img name="decorationTiling" size=origin >}}
 {{</columns>}}
 
-Now we can begin adding collision, for this we will use objects, notably `oSolid1` and `oSlope(1-4)`. On the left `Filter by name...` box, search for `Solid`. Here you will find all types of Solids, though for most purposes, `oSolid1` will be all you need. You can add it just by dragging the object into the room and placing it where you want it, then you can scale it to fit your needs. Then, for sloped surfaces you can use the `oSlope(1-4)` and `oSlope(1-4)B`. Don't try to rotate these objects, instead, if the slope doesn't have the correct orientation, take a slope with a different number and drag it into the definition box of your selected slop until you find the one with the right orientation.
+Now we can begin adding collision. For this we will use objects, in particular `oSolid1` and `oSlope(1-4)`. On the left `Filter by name...` box, search for `solid`. Here you will find all types of solids, though for most purposes, `oSolid1` will be all you need. You can add it by dragging the object into the room, placing it where you want it, and optionally scale it to fit your needs. For sloped surfaces you can use the `oSlope(1-4)` and `oSlope(1-4)B` objects. Do not rotate these, instead, if the slope doesn't have the correct orientation, take a slope with a different number and drag it into the definition box of your selected slope until you find the one with the right orientation.
 {{<hint type="warning">}}
-Never Delete objects, or basically anything in UTMT. Everything in UTMT is organized in a large list, with the newest addition always located in the bottom. Deleting something that is not literally the last thing in this list can have unforseen consequences and will often break things. If you mistakenly put the wrong object in your room, replace it with another object that you actually need (Just drag an object from into the definition box of your misplaced object)
+Never delete objects, or basically anything in UTMT. Everything in UTMT is organized in a large list, with the newest addition always located in the bottom. Deleting something that is not the last thing in its list can have unforseen consequences and will almost always break things. If you mistakenly put the wrong object in your room, replace it with another object that you actually need (by dragging the new object into the definition box of your misplaced object).
 {{</hint>}}
 
 {{< img name="initialCollision" size=origin >}}
 
-For puzzles and other uses, you can also search for `missile`, `bomb`, `super missile` and other destroyable blocks. Keep in mind that these blocks, as well as solid blocks, are invisible and do not appear without putting tiles over them or giving them creation code.  
+For puzzles and other uses, you can also search for `missile`, `bomb`, `smissile` and other destroyable blocks. Keep in mind that these blocks, as well as solid blocks, are invisible and do not appear without putting tiles over them or giving them creation code. 
 For this, there are two solutions:
-1. Add creation code for each of them and use `tile_link(tileset,x,y)` as its content. It will link the block to a tileset and will automatically use a 16 x 16 size. The x and y coordinates correspond with the top-left corner of the breakable block. 
+1. Add creation code for each of them and use `tile_link(tileset,x,y)` as its content. It will link the block to a tileset and automatically use a 16 x 16 size. The x and y coordinates correspond with the top-left corner of the breakable block.
 2. Place a tile in the position where the breakable block will be, and set the depth of that tile to either `-111` or `-112`.
 
 {{<hint type="tip">}}
-Here are all the Breakable Blocks, along with what they are commonly refered to:
-- `oBlockShoot`; Break blocks
-- `oBlockShootChain`; A chain of break blocks
+Here are all the breakable Blocks, along with what they are commonly refered to:
+- `oBlockShoot`; Beam blocks
 - `oBlockStep`; Crumble blocks
 - `oBlockBomb`; Bomb blocks
-- `oBlockBombChain`; A chain of bomb blocks
 - `oBlockMissile`; Missile blocks
 - `oBlockSMissile`; Super Missile Blocks
 - `oBlockSpeed`; Speedboost Blocks
 - `oBlockPBomb`; Power bomb blocks
-- `oBlockPBombChain`; A chain of Power bomb blocks
 - `oBlockScrew`; Screw attack blocks
+Some breakables (namely Shoot, Bomb and PBomb) also have Chain Variants.
 {{</hint>}}
 
 {{< img name="breakablesSetup" size=origin >}}
