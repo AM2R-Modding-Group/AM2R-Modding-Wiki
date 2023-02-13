@@ -76,7 +76,8 @@ Here are all the breakable Blocks, along with what they are commonly refered to:
 - `oBlockSMissile`; Super Missile Blocks
 - `oBlockSpeed`; Speedboost Blocks
 - `oBlockPBomb`; Power bomb blocks
-- `oBlockScrew`; Screw attack blocks
+- `oBlockScrew`; Screw attack blocks  
+
 Some breakables (namely Shoot, Bomb and PBomb) also have Chain Variants.
 {{</hint>}}
 
