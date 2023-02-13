@@ -5,7 +5,7 @@ weight: 1
 
 TODO: having some more screenshots in here would be nice. Also fix some phrasing.
 
-Now we come to actually laying out and "building" your room. For this, there are two main steps; Setting up collision and tiling.
+Now we get to actually laying out and "building" your room. For this, there are two main steps; Setting up collision and tiling.
 {{< hint type="tip">}}
 It is generally recommended to do tiling first, as UTMT will always put the visuals for collision blocks in the foreground, meaning that doing tiling afterwards is a horrible experience.
 {{</hint>}}
