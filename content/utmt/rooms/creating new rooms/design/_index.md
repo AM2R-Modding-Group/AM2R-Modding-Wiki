@@ -13,7 +13,7 @@ resources:
     title: First we start with the tiles the player is meant to interact with.
   - name: breakablesSetup
     src: "breakablesSetup.png"
-    title: Note that there are still tiles behind the bomb blocks, set at depth `-111`
+    title: Note that there are still tiles behind the bomb blocks, set at depth "-111"
   - name: initialCollision
     src: "initialCollision.png"
     title: Our room with added solids and slopes
@@ -25,10 +25,8 @@ resources:
     title: ...it will show up in game.
   - name: creationCodeBG
     src: "creationCodeBG.png"
-    title: The create code for our oBackG
+    title: The create code for our oBackGround
 ---
-
-TODO: having some more screenshots in here would be nice. Also fix some phrasing.
 
 Now we get to actually laying out and "building" your room. For this, there are two main steps; Setting up collision and tiling.
 {{< hint type="note">}}
@@ -84,15 +82,15 @@ Some breakables (namely Shoot, Bomb and PBomb) also have Chain Variants.
 
 {{< img name="breakablesSetup" size=origin >}}
 
-For backgrounds, you should place an `oBackground` object somewhere in the room. Usually they are placed in the top-left of the room. The `oBackground` needs create code to function, without it, it will crash the game when trying to load the room. Right click on Code on the left side and then click add. This will open a blank text window. As with rooms, create code follows a naming convention, starting with `gml_RoomCC_` followed by the name of the room the object is located in (in our case it would be `rm_a1a13`) which is then followed by the codes own ID (the number that automatically generates when you first add your code element, in our case `9808`) and finally `_Create`.  
-For the actual code itself, we only need one line to make the `oBackground` object function: `load_bgset(value)` where value decides what background will be used.  
-If you want to check what value corresponds to what background, open `gml_Script_load_bgset`. Here you will see if conditions in the format of `if (argument0 == value)`. Inside the code block following these condition there will be a line with `bgid[0]`. `CTRL` click on the number after the = and select the thing that start with bg. If you then `CTRL` click on it again you will be taken to a seperate page, showing you what background belongs to the value of the if condition.  
+For backgrounds, you should place an `oBackground` object somewhere in the room. Usually they are placed in the top-left of the room. The `oBackground` needs `creation code` to function. Without it, the game will crash when trying to load the room. Right click on `Code` in the viewer on the left side and then click add. This will open a blank text window. As with rooms, object creation code follows a naming convention, starting with `gml_RoomCC_`, followed by the name of the room the object is located in (in our case it would be `rm_a1a13`), which is then followed by the code entry's ID (the number that automatically generates when you first add your code element, in our case `9808`) and finally `_Create`.
+For the actual code itself, we only need one line to make the `oBackground` object function: `load_bgset(value)`, where value decides what background will be used.  
+If you want to check what value corresponds to what background, open the `gml_Script_load_bgset` script. Here you will see if conditions in the format of `if (argument0 == value)`. Inside the code block following these condition, there will be a line with `bgid[0]`. `CTRL` click on the number after the = and select the entry that has with `UndertaleBackground` in brackets. If you then `CTRL` click on it again, you will be taken to a separate page, showing you what background belongs to the value of that if condition.
 Alternatively, you can always check an existing `oBackground` in a room that has the background that you want, and just take the value from there.
 
 {{< img name="creationCodeBG" size=origin >}}
 
 {{<hint type="note">}}
-Remember to actually attach the create code to the object you created it for, objects like `oBackground` will not function and crash when you try to load the room they are located in.
+Remember to actually attach the creation code to the object you created it for. Objects like `oBackground` will not function properly and crash without them when you try to load the room they are located in.
 {{</hint>}}
 
 {{<columns>}}
