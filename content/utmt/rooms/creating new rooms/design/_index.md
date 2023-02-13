@@ -25,7 +25,7 @@ resources:
     title: ...it will show up in game.
   - name: creationCodeBG
     src: "creationCodeBG.png"
-    title: The create code for our oBackGround
+    title: The create code for our oBackground
 ---
 
 Now we get to actually laying out and "building" your room. For this, there are two main steps; Setting up collision and tiling.
