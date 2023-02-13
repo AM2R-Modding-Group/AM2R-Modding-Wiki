@@ -1,5 +1,5 @@
 ---
-title: Creating New Rooms
+title: Creating new rooms
 ---
 TODO: Add some fancy flavour text here
 
