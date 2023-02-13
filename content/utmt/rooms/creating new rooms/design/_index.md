@@ -11,6 +11,21 @@ resources:
   - name: initialTiling
     src: "initialTiling.png"
     title: First we start with the tiles the player is meant to interact with.
+  - name: breakablesSetup
+    src: "breakablesSetup.png"
+    title: Note that there are still tiles behind the bomb blocks, set at depth `-111`
+  - name: initialCollision
+    src: "initialCollision.png"
+    title: Our room with added solids and slopes
+  - name: bgInUTMT
+    src: "bgInUTMT.png"
+    title: While you can't see the background in the editor...
+  - name: bgInGame
+    src: "bgInGame.png"
+    title: ...it will show up in game.
+  - name: creationCodeBG
+    src: "creationCodeBG.png"
+    title: The create code for our oBackG
 ---
 
 TODO: having some more screenshots in here would be nice. Also fix some phrasing.
@@ -47,6 +62,8 @@ Now we can begin adding collision, for this we will use objects, notably `oSolid
 Never Delete objects, or basically anything in UTMT. Everything in UTMT is organized in a large list, with the newest addition always located in the bottom. Deleting something that is not literally the last thing in this list can have unforseen consequences and will often break things. If you mistakenly put the wrong object in your room, replace it with another object that you actually need (Just drag an object from into the definition box of your misplaced object)
 {{</hint>}}
 
+{{< img name="initialCollision" size=origin >}}
+
 For puzzles and other uses, you can also search for `missile`, `bomb`, `super missile` and other destroyable blocks. Keep in mind that these blocks, as well as solid blocks, are invisible and do not appear without putting tiles over them or giving them creation code.  
 For this, there are two solutions:
 1. Add creation code for each of them and use `tile_link(tileset,x,y)` as its content. It will link the block to a tileset and will automatically use a 16 x 16 size. The x and y coordinates correspond with the top-left corner of the breakable block. 
@@ -67,10 +84,23 @@ Here are all the Breakable Blocks, along with what they are commonly refered to:
 - `oBlockScrew`; Screw attack blocks
 {{</hint>}}
 
-Now you can add breakable blocks in your room!  
+{{< img name="breakablesSetup" size=origin >}}
 
-For backgrounds, you should place an `oBackground` object somewhere in the room. Usually they are placed in the top-left of the room. The `oBackground` object has create code `load_bgset(value)`. The value is the set of backgrounds the object will use. For example, `load_bgset(7)` will put the Area 4 background sprites in the background. The best way to determine this is finding an `oBackground` object in a different room in the same area as yours or the area your prefer and copying it or its creation code to yours. Your room now has a background with parallax movement!
+For backgrounds, you should place an `oBackground` object somewhere in the room. Usually they are placed in the top-left of the room. The `oBackground` needs create code to function, without it, it will crash the game when trying to load the room. Right click on Code on the left side and then click add. This will open a blank text window. As with rooms, create code follows a naming convention, starting with `gml_RoomCC_` followed by the name of the room the object is located in (in our case it would be `rm_a1a13`) which is then followed by the codes own ID (the number that automatically generates when you first add your code element, in our case `9808`) and finally `_Create`.  
+For the actual code itself, we only need one line to make the `oBackground` object function: `load_bgset(value)` where value decides what background will be used.  
+If you want to check what value corresponds to what background, open `gml_Script_load_bgset`. Here you will see if conditions in the format of `if (argument0 == value)`. Inside the code block following these condition there will be a line with `bgid[0]`. `CTRL` click on the number after the = and select the thing that start with bg. If you then `CTRL` click on it again you will be taken to a seperate page, showing you what background belongs to the value of the if condition.  
+Alternatively, you can always check an existing `oBackground` in a room that has the background that you want, and just take the value from there.
 
-TODO: above is false, you can easily check what value is used for load_bgset by checking the appropriate script, and then ctrl+clicking the number next to `bgid[0]` under the `argument0 == value` condition.
+{{< img name="creationCodeBG" size=origin >}}
 
-Now, your room's collision and destroyable blocks are all layed out, you could even test it out in game right now, but currently you cannot get into your room. For this we will need transitions. Covered in the next page
+{{<hint type="note">}}
+Remember to actually attach the create code to the object you created it for, objects like `oBackground` will not function and crash when you try to load the room they are located in.
+{{</hint>}}
+
+{{<columns>}}
+{{< img name="bgInUTMT" size=origin >}}
+<--->
+{{< img name="bgInGame" size=origin >}}
+{{</columns>}}
+
+Now, your room has tiles, collision objects, breakable blocks and a parallax background! You could even test it out in game right now, but currently you cannot get into your room. For this we will need transitions.
