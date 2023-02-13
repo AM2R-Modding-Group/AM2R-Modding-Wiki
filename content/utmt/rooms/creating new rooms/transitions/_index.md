@@ -7,6 +7,7 @@ resources:
     title: Optimal placing for up and down transitions
   - name: optimalRoomSide
     src: "optimalRoomSide.png"
+    title: Optimal placing for left and right transitions
 ---
 
 Finally, we are up to transitions. These are the `oGotoRoom` objects that allow you to go to other rooms, and they take quite a bit of time to prepare to be visually appealing. Bad transitions end up with teleporting Samuses across the screen and the camera moving strangely. However, with the right knowledge, it can be done very quickly. Each transition requires a lot of number fiddling in the creation code. The essential values needed are: `targetroom`, `direction`, `height`, `targetx`, `targety`, `camstartx`, `camstarty`, `transitionx`, `transitiony`.  
