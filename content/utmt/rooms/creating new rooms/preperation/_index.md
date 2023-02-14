@@ -16,9 +16,9 @@ resources:
     title: This is what it should look like after setting up the "bgScreenGuide" element 
 ---
 
-TODO: there's a helper script to automatically generate these templates, should be referenced and used here. Manual version should be kept for completeness.
+{{<todo>}} there's a helper script to automatically generate these templates, should be referenced and used here. Manual version should be kept for completeness. {{</todo>}} 
 
-TODO: explain some wide screen shenanigans on single map-tile width rooms.
+{{<todo>}} explain some wide screen shenanigans on single map-tile width rooms. {{</todo>}} 
 
 Before we set up tiles or textures, we must first make some preperations. To get started, create a new room by right-clicking on `Rooms` in the viewer on the left and then click `add`. Now you will see 3 things;
 - At the top left, a list of all objects that are in your room.
