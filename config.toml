@@ -10,6 +10,7 @@ pluralizeListTitles = false
 pygmentsUseClasses = true
 pygmentsCodeFences = true
 disablePathToLower = true
+enableGitInfo = true
 
 defaultContentLanguage = "en"
 

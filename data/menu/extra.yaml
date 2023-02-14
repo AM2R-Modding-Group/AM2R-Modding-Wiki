@@ -1,0 +1,6 @@
+---
+header:
+  - name: GitHub
+    ref: https://miepee.github.io/AM2R-Modding-Wiki/
+    icon: gdoc_github
+    external: true
