@@ -1,6 +1,6 @@
 ---
 title: Creating new rooms
 ---
-TODO: Add some fancy flavour text here
+{{<todo>}}Add some fancy flavour text here{{</todo>}}
 
 {{<toc-tree>}}

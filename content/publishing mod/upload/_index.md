@@ -19,9 +19,6 @@ resources:
     src: "editRelease.png"
     title: Edit a Release
 ---
-
-TODO: use hugo image resources for these, instead of gist references
-
 Now that you have your AM2RLauncher Mods, you'll need to upload these zip files somewhere publically.  
 For this it is reccomended to **not upload them** on Google Drive / Mega / MediaFire etc., as a) those links can die
 easily and b) they are not discoverable from a normal search engine.  
@@ -39,7 +36,8 @@ First, you need to create an account and the repository:
     - You can also change the visibility to `Private` here, if you intend to release mods for a selected testing team.
 It's always possible to change visibility later.
     - You don't need to fill in a gitignore/license yet. This is covered somewhere down below 
-in case you want to add code to your repo TODO: this thing
+in case you want to add code to your repo 
+      {{<todo>}}Actually write it{{</todo>}}
 
     It should look somewhat like this:  
     {{<img name="createRepoDetail" size="origin">}}

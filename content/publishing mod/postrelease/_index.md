@@ -3,6 +3,8 @@ title: Niceties after Release
 weight: 4
 ---
 
+{{<todo>}}Seperate a few things from here into seperate pages.{{</todo>}}
+
 These are a few niceties you can do after you have released your Mod to the public.
 
 - Make a thread on the [AM2R Discord Server](https://discord.gg/YTQnkAJ). You probably have already done that during development, but if you haven't,
@@ -24,4 +26,4 @@ add your mod into the file, scroll down at the bottom and insert a comment, then
 - Upload the code for your Mod. This is a little bit more convoluted, and will thus get its own section down below.
 
 ### Publish the Code for your Mod
-TODO: at one point I'll write this...
+{{<todo>}}Actually write it{{</todo>}}

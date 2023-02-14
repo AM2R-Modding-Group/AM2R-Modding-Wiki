@@ -9,65 +9,65 @@
 
 /* Dark mode theming */
 :root[color-theme="dark"] {
-  --header-background: #2e6b07; /* done */
-  --header-font-color: #ffffff; /* done */
+  --header-background: #2e6b07; 
+  --header-font-color: #ffffff; 
 
-  --body-background: #000000; /* done */
-  --body-font-color: #ced3d8; /* done */
+  --body-background: #000000; 
+  --body-font-color: #e6e4e4; 
 
-  --mark-color: #79b8ff;  /* done */
+  --mark-color: #79b8ff;  
 
-  --button-background: #8ebc23; /* done */
-  --button-border-color: #8ebc23; /* done */
+  --button-background: #8ebc23; 
+  --button-border-color: #8ebc23;
 
-  --link-color: #8ebc23; /* done */
-  --link-color-visited: #c27a9e; /* done */
+  --link-color: #8ebc23; 
+  --link-color-visited: #c27a9e;
 
-  --code-background: #2f353a;  /* done */
-  --code-accent-color: #262b2f;  /* done */
-  --code-accent-color-lite: #2b3035;  /* done */
-  --code-font-color: #dedede; /* done */
+  --code-background: #2f353a;  
+  --code-accent-color: #262b2f; 
+  --code-accent-color-lite: #2b3035;
+  --code-font-color: #dedede; 
 
-  --code-copy-background: #343a40;  /* done */
-  --code-copy-font-color: #dedede;  /* done */
-  --code-copy-border-color: #6b7784;  /* done */
-  --code-copy-success-color: #2e6b07;  /* done */
+  --code-copy-background: #343a40; 
+  --code-copy-font-color: #dedede; 
+  --code-copy-border-color: #6b7784; 
+  --code-copy-success-color: #2e6b07; 
  
-  --accent-color: #6b7784;
+  --accent-color: #343a40;
   --accent-color-lite: #343a40;
 
   --control-icons: #dedede;
 
   --footer-background: #343a40;
   --footer-font-color: #ffffff;
-  --footer-link-color: #8ebc23; /* done */
-  --footer-link-color-visited: #c27a9e; /* done */
+  --footer-link-color: #8ebc23; 
+  --footer-link-color-visited: #c27a9e; 
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --header-background: #2e6b07; /* done */
-    --header-font-color: #ffffff; /* done */
+    --header-background: #2e6b07; 
+    --header-font-color: #ffffff; 
  
-    --body-background: #000000; /* done */
-    --body-font-color: #e6e4e4; /* done */
+    --body-background: #000000; 
+    --body-font-color: #e6e4e4; 
 
-    --mark-color: #79b8ff;  /* done */
+    --mark-color: #79b8ff;  
 
-    --button-background: #8ebc23; /* done */
-    --button-border-color: #8ebc23; /* done */
+    --button-background: #8ebc23; 
+    --button-border-color: #8ebc23; 
 
-    --link-color: #8ebc23; /* done */
-    --link-color-visited: #c27a9e; /* done */
+    --link-color: #8ebc23; 
+    --link-color-visited: #c27a9e; 
 
     --code-background: #2f353a;
     --code-accent-color: #262b2f;
     --code-accent-color-lite: #2b3035;
-    --code-font-color: #dedede; /* done */
+    --code-font-color: #dedede; 
 
-    --code-copy-background: #343a40;  /* done */
-    --code-copy-font-color: #dedede;  /* done */
-    --code-copy-border-color: #6b7784;  /* done */
-    --code-copy-success-color: #2e6b07;  /* done */
+    --code-copy-background: #343a40;  
+    --code-copy-font-color: #dedede;  
+    --code-copy-border-color: #6b7784;  
+    --code-copy-success-color: #2e6b07;  
 
     --accent-color: #343a40;
     --accent-color-lite: #343a40;
@@ -76,7 +76,7 @@
 
     --footer-background: #343a40;
     --footer-font-color: #ffffff;
-    --footer-link-color: #8ebc23; /* done */
-    --footer-link-color-visited: #c27a9e; /* done */
+    --footer-link-color: #8ebc23; 
+    --footer-link-color-visited: #c27a9e; 
   }
 }

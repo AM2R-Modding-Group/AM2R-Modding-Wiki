@@ -12,9 +12,9 @@ If you create your mod with UndertaleModTool, then the very first step you need 
 The procedure usually is as follows:
 1. Navigate to the folder where you have your mod. The structure (On Windows) should look like this:  
 
-{{< img name="structureWin" size="origin" >}}
+ {{<todo>}}when modding on non-windows becomes more prominent, post structure on Linux/Mac/Android too and show via tabs{{</todo>}}
 
-(TODO: when modding on non-windows becomes more prominent, post structure on Linux/Mac/Android too)
+{{< img name="structureWin" size="origin" >}}
 
 2. Select all files in there. If there is a file called `profile.xml` in there, *unselect it*. 
 That file is necessary for the AM2RLauncher, and including it will make your mod uninstallable.
