@@ -16,11 +16,29 @@ resources:
     title: This is what it should look like after setting up the "bgScreenGuide" element 
 ---
 
-{{<todo>}} there's a helper script to automatically generate these templates, should be referenced and used here. Manual version should be kept for completeness. {{</todo>}} 
+{{<todo>}} there's a helper script to automatically generate these templates, should be referenced and used here.{{</todo>}} 
 
 {{<todo>}} explain some wide screen shenanigans on single map-tile width rooms. {{</todo>}} 
 
-Before we set up tiles or textures, we must first make some preperations. To get started, create a new room by right-clicking on `Rooms` in the viewer on the left and then click `add`. Now you will see 3 things;
+Before we set up tiles or textures, we must first make some preperations. There is an automatic way and a manual way to do these, with the automatic way being preferred.
+
+{{<tabs "prep">}}
+
+{{<tab "Automatic">}}
+There is an UTMT script that will simplify the room creation process. First, follow the steps of the [scripts section]({{<ref "/utmt/am2r-scripts" >}}).  
+After that, execute the `NewRoomScript.csx` script. This will create a 320x240 room for you, with all the other prerequisites already set.  
+
+You can now change the room size and the room name.   
+For the room size, make __absolutely__ sure that the dimensions are multiples of `320` x `240` as otherwise it will cause issues in-game.  
+
+For the room name, it is recommended to follow the naming convention of all the other rooms in the game: start with `rm_`, then the area your room belongs to (`a0`, `a1`, `a2`, etc.), a letter to denote which subsection of that area you are in (`h` for outside, and then `a`, `b`, etc.) and finally the number of the room itself (`01`, `02`, `03`, etc.).  
+If you were adding a room inside Golden Temple for example, you would name it something like `rm_a1a13`. But of course you can use any names you like. 
+
+{{<todo>}} Add one screenshot {{</todo>}} 
+
+{{</tab>}}
+{{<tab "Manual">}}
+To get started, create a new room by right-clicking on `Rooms` in the viewer on the left and then click `add`. Now you will see 3 things;
 - At the top left, a list of all objects that are in your room.
 - At the top right, a set of values, corresponding to the element that you currently have selected.
 - At the bottom, a visual overview of your room. If you're adding a new room, this will be completely gray.
@@ -45,3 +63,5 @@ Next, click on the `Views` category, and then click on the first View. Set its `
 <--->
 {{< img name="viewsSetup" size="origin" >}}
 {{</columns>}}
+
+{{</tabs>}}
