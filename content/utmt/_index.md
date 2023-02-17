@@ -12,3 +12,5 @@ title: UndertaleModTool
 {{<todo>}} have folder for sounds+music and explain how to add {{</todo>}}
 
 {{<todo>}} add "next page" and "previous page" links on the bottom of pages {{</todo>}}
+
+{{<todo>}} Add page about adding new items {{</todo>}}
