@@ -57,7 +57,7 @@ It is recommended to start with the tiles that the player will interact with, th
 
 Now we can begin adding collision. For this we will use objects, in particular `oSolid1` and `oSlope(1-4)`. On the left `Filter by name...` box, search for `solid`. Here you will find all types of solids, though for most purposes, `oSolid1` will be all you need. You can add it by dragging the object into the room, placing it where you want it, and optionally scale it to fit your needs. For sloped surfaces you can use the `oSlope(1-4)` and `oSlope(1-4)B` objects. Do not rotate these, instead, if the slope doesn't have the correct orientation, take a slope with a different number and drag it into the definition box of your selected slope until you find the one with the right orientation.
 {{<hint type="warning">}}
-Never delete objects, or basically anything in UTMT. Everything in UTMT is organized in a large list, with the newest addition always located in the bottom. Deleting something that is not the last thing in its list can have unforseen consequences and will almost always break things. If you mistakenly put the wrong object in your room, replace it with another object that you actually need (by dragging the new object into the definition box of your misplaced object).
+Be careful when deleting objects. If there was any code that still referenced the object, expect crashes or other breakage in-game.
 {{</hint>}}
 
 {{< img name="initialCollision" size=origin >}}
