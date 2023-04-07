@@ -12,11 +12,10 @@
 <meta name="generator" content="Hugo 0.111.3">
 
 
-  <meta name="description" content="TODO: Seperate a few things from here into seperate pages. These are a few niceties you can do after you have released your Mod to the public.
-Make a thread on the AM2R Discord Server. You probably have already done that during development, but if you haven&rsquo;t, you should do it in order to see feedback/criticism/experience for your mod in an easy way.
-Add your Mod to the Unofficial AM2R Mod List here" />
+  <meta name="description" content="Item variables are global variables that keep track of what items the player has collected. These variables are listed in the gobal.item[] array. Adding new items or replacing existing items such as Screw Attack will be much easier when you know which global variables corresponds to what item.
+There are two separate variables for most items that either keep track of whether the player has it obtained or equipped. For example, Spider Ball is mapped to global." />
 
-    <title>Niceties after Release | AM2R Modding Wiki</title>
+    <title>Global Items | AM2R Modding Wiki</title>
 
     <link rel="icon" type="image/svg+xml" href="/AM2R-Modding-Wiki/favicon/favicon.svg" />
 <link
@@ -37,51 +36,49 @@ Add your Mod to the Unofficial AM2R Mod List here" />
     
   <meta
     property="og:title"
-    content="Niceties after Release"
+    content="Global Items"
   />
   <meta property="og:site_name" content="AM2R Modding Wiki" />
-  <meta property="og:description" content="TODO: Seperate a few things from here into seperate pages. These are a few niceties you can do after you have released your Mod to the public.
-Make a thread on the AM2R Discord Server. You probably have already done that during development, but if you haven’t, you should do it in order to see feedback/criticism/experience for your mod in an easy way.
-Add your Mod to the Unofficial AM2R Mod List here" />
+  <meta property="og:description" content="Item variables are global variables that keep track of what items the player has collected. These variables are listed in the gobal.item[] array. Adding new items or replacing existing items such as Screw Attack will be much easier when you know which global variables corresponds to what item.
+There are two separate variables for most items that either keep track of whether the player has it obtained or equipped. For example, Spider Ball is mapped to global." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://miepee.github.io/AM2R-Modding-Wiki/publishing-mod/postrelease/" />
+<meta property="og:url" content="https://miepee.github.io/AM2R-Modding-Wiki/global-items/" />
 
-<meta property="article:section" content="Publishing Mod" />
+<meta property="article:section" content="Global Items" />
     <meta
       property="article:modified_time"
-      content="2023-02-14T12:09:06+01:00"
+      content="2023-04-07T23:57:56+10:00"
     />
 
 
   <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="Niceties after Release" />
-  <meta name="twitter:description" content="TODO: Seperate a few things from here into seperate pages. These are a few niceties you can do after you have released your Mod to the public.
-Make a thread on the AM2R Discord Server. You probably have already done that during development, but if you haven’t, you should do it in order to see feedback/criticism/experience for your mod in an easy way.
-Add your Mod to the Unofficial AM2R Mod List here" />
+<meta name="twitter:title" content="Global Items" />
+  <meta name="twitter:description" content="Item variables are global variables that keep track of what items the player has collected. These variables are listed in the gobal.item[] array. Adding new items or replacing existing items such as Screw Attack will be much easier when you know which global variables corresponds to what item.
+There are two separate variables for most items that either keep track of whether the player has it obtained or equipped. For example, Spider Ball is mapped to global." />
 
 
   <script type="application/ld+json">
   {
       "@context": "http://schema.org",
       "@type": "TechArticle",
-      "articleSection": "Publishing Mod",
-      "name": "Niceties after Release",
-      "url" : "https://miepee.github.io/AM2R-Modding-Wiki/publishing-mod/postrelease/",
-      "headline": "Niceties after Release",
-      "description": "TODO: Seperate a few things from here into seperate pages. These are a few niceties you can do after you have released your Mod to the public.\nMake a thread on the AM2R Discord Server. You probably have already done that during development, but if you haven’t, you should do it in order to see feedback\/criticism\/experience for your mod in an easy way.\nAdd your Mod to the Unofficial AM2R Mod List here",
-      "wordCount" : "229",
+      "articleSection": "Global Items",
+      "name": "Global Items",
+      "url" : "https://miepee.github.io/AM2R-Modding-Wiki/global-items/",
+      "headline": "Global Items",
+      "description": "Item variables are global variables that keep track of what items the player has collected. These variables are listed in the gobal.item[] array. Adding new items or replacing existing items such as Screw Attack will be much easier when you know which global variables corresponds to what item.\nThere are two separate variables for most items that either keep track of whether the player has it obtained or equipped. For example, Spider Ball is mapped to global.",
+      "wordCount" : "441",
       "license": "CC BY-SA 4.0",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
       "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "https://miepee.github.io/AM2R-Modding-Wiki/publishing-mod/postrelease/"
+          "@id": "https://miepee.github.io/AM2R-Modding-Wiki/global-items/"
       },
       "copyrightHolder" : "AM2R Modding Wiki",
       "copyrightYear" : "0001",
       "dateCreated": "0001-01-01T00:00:00.00Z",
       "datePublished": "0001-01-01T00:00:00.00Z",
-      "dateModified": "2023-02-14T12:09:06.00Z",
+      "dateModified": "2023-04-07T23:57:56.00Z",
       "publisher":{
           "@type":"Organization",
           "name": "AM2R Modding Wiki",
@@ -159,7 +156,7 @@ Add your Mod to the Unofficial AM2R Mod List here" />
   href="/AM2R-Modding-Wiki/custom.css"
   media="all"
 />
-  <link href="https://miepee.github.io/AM2R-Modding-Wiki/publishing-mod/postrelease/" rel="canonical" type="text/html" />
+  <link href="https://miepee.github.io/AM2R-Modding-Wiki/global-items/" rel="canonical" type="text/html" />
 
 <!-- Made with Geekdoc theme https://github.com/thegeeklab/hugo-geekdoc -->
 
@@ -494,7 +491,7 @@ Add your Mod to the Unofficial AM2R Mod List here" />
                 <span class="flex">
                   <a
                     href="/AM2R-Modding-Wiki/global-items/"
-                    class="gdoc-nav__entry"
+                    class="gdoc-nav__entry is-active"
                   >
                     Global Items
                   </a>
@@ -1076,7 +1073,7 @@ Add your Mod to the Unofficial AM2R Mod List here" />
                 <span class="flex">
                   <a
                     href="/AM2R-Modding-Wiki/publishing-mod/postrelease/"
-                    class="gdoc-nav__entry is-active"
+                    class="gdoc-nav__entry"
                   >
                     Niceties after Release
                   </a>
@@ -1156,15 +1153,7 @@ Add your Mod to the Unofficial AM2R Mod List here" />
     
   
   
-    
-    
-    
-    
-  
-  
-    <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/AM2R-Modding-Wiki/' href='/AM2R-Modding-Wiki/'><span itemprop='name'>AM2R Modding Wiki</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/AM2R-Modding-Wiki/publishing-mod/' href='/AM2R-Modding-Wiki/publishing-mod/'><span itemprop='name'>Publishing your Mod</span></a><meta itemprop='position' content='3' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>Niceties after Release</span><meta itemprop='position' content='4' /></li>
-  
-
+    <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/AM2R-Modding-Wiki/' href='/AM2R-Modding-Wiki/'><span itemprop='name'>AM2R Modding Wiki</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>Global Items</span><meta itemprop='position' content='3' /></li>
   
 
   
@@ -1177,7 +1166,7 @@ Add your Mod to the Unofficial AM2R Mod List here" />
       <span class="editpage">
         <svg class="gdoc-icon gdoc_code"><use xlink:href="#gdoc_code"></use></svg>
         <a
-          href="https://github.com/Miepee/AM2R-Modding-Wiki/edit/master/content/publishing%20mod/postrelease/_index.md"
+          href="https://github.com/Miepee/AM2R-Modding-Wiki/edit/master/content/global%20items/_index.md"
         >
           Edit page
         </a>
@@ -1191,65 +1180,130 @@ Add your Mod to the Unofficial AM2R Mod List here" />
   <article
     class="gdoc-markdown gdoc-markdown__align--left"
   >
-    <h1>Niceties after Release</h1>
-    <blockquote class="gdoc-hint">
-  <div class="gdoc-hint__title flex align-center">
-      <img alt="todo!" src="/AM2R-Modding-Wiki/logo.png" style="margin-right: 1rem">
-      <span style="color: white">TODO:</span>
-  </div>
-  <div class="gdoc-hint__text">Seperate a few things from here into seperate pages.</div>
+    <h1>Global Items</h1>
+    <p>Item variables are global variables that keep track of what items the player has collected. These variables are listed in the <code>gobal.item[]</code> array. Adding new items or replacing existing items such as Screw Attack will be much easier when you know which global variables corresponds to what item.</p>
+<p>There are two separate variables for most items that either keep track of whether the player has it obtained or equipped. For example, Spider Ball is mapped to <code>global.item[2]</code> which if set to <code>1</code> indicates that the player has collected it. <code>global.spiderball</code>, however, dictates if the player is able to use it or not. If <code>global.spiderball</code> is equivalent to <code>0</code>, then in this case, the player has the item collected and can enable it, but it is currently disabled.</p>
+
+
+
+
+
+<blockquote class="gdoc-hint note">
+  <div class="gdoc-hint__title flex align-center"><i class="fa note" title="Note"></i></div>
+  <div class="gdoc-hint__text">The variable tracking of a major is currently equipped or not is not part of the <code>global.item</code> array.</div>
 </blockquote>
 
-<p>These are a few niceties you can do after you have released your Mod to the public.</p>
-<ul>
-<li>
-<p>Make a thread on the <a
-  class="gdoc-markdown__link"
-  href="https://discord.gg/YTQnkAJ"
->AM2R Discord Server</a>. You probably have already done that during development, but if you haven&rsquo;t,
-you should do it in order to see feedback/criticism/experience for your mod in an easy way.</p>
-</li>
-<li>
-<p>Add your Mod to the <a
-  class="gdoc-markdown__link"
-  href="https://gitlab.com/Miepee/AM2R-Mods/"
->Unofficial AM2R Mod List here</a></p>
-<ul>
-<li>In order to do that, create an Account on GitLab (you can also login with your GitHub account), click on <code>Readme.md</code>, click on the <code>Open in Web IDE</code> button,
-add your mod into the file, scroll down at the bottom and insert a comment, then finally click on &ldquo;Propose changes&rdquo;</li>
-<li>If you don&rsquo;t want to create a GitLab account, ask in the communication channels whether someone can add it for you</li>
-</ul>
-</li>
-<li>
-<p>Use the Issue tracker on GitHub/GitLab/etc. to easily track issues and feature requests.</p>
-</li>
-<li>
-<p>Make a post on the Subreddit/YouTube about your Mod.</p>
-</li>
-<li>
-<p>If you have made a Linux release, advertize Steam Deck compatibility.</p>
-</li>
-<li>
-<p>Make it possible to install your Mod via a Termux script. This benefits people who only have an Android phone.</p>
-</li>
-<li>
-<p>Upload the code for your Mod. This is a little bit more convoluted, and will thus get its own section down below.</p>
-</li>
-</ul>
-<div class="gdoc-page__anchorwrap">
-    <h3 id="publish-the-code-for-your-mod">
-        Publish the Code for your Mod
-        <a data-clipboard-text="https://miepee.github.io/AM2R-Modding-Wiki/publishing-mod/postrelease/#publish-the-code-for-your-mod" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Publish the Code for your Mod" aria-label="Anchor to: Publish the Code for your Mod" href="#publish-the-code-for-your-mod">
-            <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
-        </a>
-    </h3>
-</div>
+<p>If you want to set up majors as temporary powerups you should set the player having them active, but not unlocked, then set it as inactive once the powerup has expired.</p>
+<div class="table-wrap"> <table>
+<thead>
+<tr>
+<th style="text-align:center">Global Item Variable</th>
+<th style="text-align:center">Currently Active Item Variable</th>
+<th style="text-align:center">Corresponding Item</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">global.item[0]</td>
+<td style="text-align:center">global.bomb</td>
+<td style="text-align:center">Bombs</td>
+</tr>
+<tr>
+<td style="text-align:center">global.item[1]</td>
+<td style="text-align:center">global.powergrip</td>
+<td style="text-align:center">Power Grip</td>
+</tr>
+<tr>
+<td style="text-align:center">global.item[2]</td>
+<td style="text-align:center">global.spiderball</td>
+<td style="text-align:center">Spider Ball</td>
+</tr>
+<tr>
+<td style="text-align:center">global.item[3]</td>
+<td style="text-align:center">global.jumpball</td>
+<td style="text-align:center">Spring Ball</td>
+</tr>
+<tr>
+<td style="text-align:center">global.item[4]</td>
+<td style="text-align:center">global.screwattack</td>
+<td style="text-align:center">Screw Attack</td>
+</tr>
+<tr>
+<td style="text-align:center">global.item[5]</td>
+<td style="text-align:center">global.currentsuit (should return <code>1</code>)</td>
+<td style="text-align:center">Varia Suit</td>
+</tr>
+<tr>
+<td style="text-align:center">global.item[6]</td>
+<td style="text-align:center">global.spacejump</td>
+<td style="text-align:center">Space Jump</td>
+</tr>
+<tr>
+<td style="text-align:center">global.item[7]</td>
+<td style="text-align:center">global.speedbooster</td>
+<td style="text-align:center">Speed Booster</td>
+</tr>
+<tr>
+<td style="text-align:center">global.item[8]</td>
+<td style="text-align:center">global.hijump</td>
+<td style="text-align:center">Hi-Jump</td>
+</tr>
+<tr>
+<td style="text-align:center">global.item[9]</td>
+<td style="text-align:center">global.currentsuit (should return <code>2</code>)</td>
+<td style="text-align:center">Gravity Suit</td>
+</tr>
+<tr>
+<td style="text-align:center">global.item[10]</td>
+<td style="text-align:center">global.cbeam</td>
+<td style="text-align:center">Charge Beam</td>
+</tr>
+<tr>
+<td style="text-align:center">global.item[11]</td>
+<td style="text-align:center">global.ibeam</td>
+<td style="text-align:center">Ice Beam</td>
+</tr>
+<tr>
+<td style="text-align:center">global.item[12]</td>
+<td style="text-align:center">global.wbeam</td>
+<td style="text-align:center">Wave Beam</td>
+</tr>
+<tr>
+<td style="text-align:center">global.item[13]</td>
+<td style="text-align:center">global.sbeam</td>
+<td style="text-align:center">Spazer Beam</td>
+</tr>
+<tr>
+<td style="text-align:center">global.item[14]</td>
+<td style="text-align:center">global.pbeam</td>
+<td style="text-align:center">Plasma Beam</td>
+</tr>
+<tr>
+<td style="text-align:center">global.item[15]</td>
+<td style="text-align:center">global.morphball</td>
+<td style="text-align:center">Morph Ball</td>
+</tr>
+</tbody>
+</table> </div>
+
+
+
+
+
+<blockquote class="gdoc-hint note">
+  <div class="gdoc-hint__title flex align-center"><i class="fa note" title="Note"></i></div>
+  <div class="gdoc-hint__text">Colliding with an item object will switch on both the collected item variable and the currently active item variable, enabling the player to turn the powerup on and off and have it enabled when picked up.</div>
+</blockquote>
+
+<p>It is important to note that the Power Suit is not a major item. Suits are chosen depending on what <code>global.currentsuit</code> suit is. <code>0</code> is Power Suit, <code>1</code> is Varia Suit, <code>2</code> is Gravity Suit.</p>
+<p>Despite Morph Ball and Power Grip being obtained and enabled on game start, there exists a Power Grip item, but no Morph Ball item. This is a leftover from Metroid:Confrontation. However, the game assumes the player always has the Morph Ball no matter what, mainly because it is already acquired on the start of the game.</p>
+<p>There are 88 total items in the game, including all major items and minor items. Items with global item values greater than <code>15</code> are minor items (missile tanks, energy tanks, super missiles, and power bombs).</p>
 <blockquote class="gdoc-hint">
   <div class="gdoc-hint__title flex align-center">
       <img alt="todo!" src="/AM2R-Modding-Wiki/logo.png" style="margin-right: 1rem">
       <span style="color: white">TODO:</span>
   </div>
-  <div class="gdoc-hint__text">Actually write it</div>
+  <div class="gdoc-hint__text">Currently, there is no table available that displays information of all the <code>global.item</code> values used for minor items, however those can be seen in <code>gml_Script_debug_view_items</code>.</div>
 </blockquote>
 
 
