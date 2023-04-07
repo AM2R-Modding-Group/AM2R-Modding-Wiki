@@ -63,5 +63,5 @@ Next, click on the `Views` category, and then click on the first View. Set its `
 <--->
 {{< img name="viewsSetup" size="origin" >}}
 {{</columns>}}
-
+{{</tab>}}
 {{< /tabs >}}
