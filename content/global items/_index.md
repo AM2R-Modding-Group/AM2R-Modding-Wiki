@@ -18,11 +18,11 @@ The variable tracking of a major is currently equipped or not is not part of the
 | global.item[1] | global.powergrip | Power Grip |
 | global.item[2] | global.spiderball | Spider Ball |
 | global.item[3] | global.jumpball | Spring Ball |
-| global.item[4] | global.screwattack | Screw Attack |
+| global.item[4] | global.hijump | Hi-Jump |
 | global.item[5] | global.currentsuit (should return `1`) | Varia Suit |
 | global.item[6] | global.spacejump | Space Jump |
 | global.item[7] | global.speedbooster | Speed Booster |
-| global.item[8] | global.hijump | Hi-Jump |
+| global.item[8] | global.screwattack| Screw Attack |
 | global.item[9] | global.currentsuit (should return `2`) | Gravity Suit |
 | global.item[10] | global.cbeam | Charge Beam |
 | global.item[11] | global.ibeam | Ice Beam |
