@@ -1,5 +1,5 @@
 
-baseURL = "https://miepee.github.io/AM2R-Modding-Wiki/"
+baseURL = "https://am2r-modding-group.github.io/AM2R-Modding-Wiki/"
 title = "AM2R Modding Wiki"
 theme = "hugo-geekdoc"
 
@@ -57,7 +57,7 @@ enableRobotsTXT = true
 
   # (Optional, default none) Set source repository location. Used for 'Edit page' links.
   # You can also specify this parameter per page in front matter.
-  geekdocRepo = "https://github.com/Miepee/AM2R-Modding-Wiki"
+  geekdocRepo = "https://github.com/AM2R-Modding-Group/AM2R-Modding-Wiki"
 
   # (Optional, default none) Enable 'Edit page' links. Requires 'GeekdocRepo' param
   # and the path must point to the parent directory of the 'content' folder.
