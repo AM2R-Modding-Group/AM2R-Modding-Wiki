@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Publishing your Mod on AM2R Modding Wiki</title>
-    <link>https://miepee.github.io/AM2R-Modding-Wiki/publishing-mod/</link>
+    <link>https://am2r-modding-group.github.io/AM2R-Modding-Wiki/publishing-mod/</link>
     <description>Recent content in Publishing your Mod on AM2R Modding Wiki</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://miepee.github.io/AM2R-Modding-Wiki/publishing-mod/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="https://am2r-modding-group.github.io/AM2R-Modding-Wiki/publishing-mod/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

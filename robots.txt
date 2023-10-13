@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: /tags/*
 
-Sitemap: https://miepee.github.io/AM2R-Modding-Wiki/sitemap.xml
+Sitemap: https://am2r-modding-group.github.io/AM2R-Modding-Wiki/sitemap.xml
