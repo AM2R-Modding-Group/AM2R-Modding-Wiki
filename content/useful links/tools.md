@@ -16,7 +16,3 @@ Glenn lets you able to port your Mod to Windows, Linux, Android and Mac.
 ### Atomic
 Download: https://github.com/AM2R-Community-Developers/Atomic/releases  
 Atomic makes your mods AM2RLauncher compatible, so that other people can properly install them.
-
-### Anna
-Download: https://github.com/Miepee/Anna/releases  
-Anna is a resource pack manager for AM2RLauncher profiles.
