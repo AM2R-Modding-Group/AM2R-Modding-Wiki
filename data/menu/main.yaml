@@ -1,0 +1,40 @@
+---
+main:
+  - name: Useful Links
+    sub:
+      - name: Chats
+        ref: "/useful links/chats"
+      - name: Tools
+        ref: "/useful links/tools"
+  - name: Global Items
+    ref: "/global items"
+  - name: UndertaleModTool
+    ref: "/utmt"
+    sub:
+      - name: Custom AM2R Scripts
+        ref: "/utmt/am2r-scripts"
+      - name: Rooms
+        sub:
+          - name: Creating new rooms
+            ref: "/utmt/rooms/creating new rooms"
+            sub:
+              - name: Preperation
+                ref: "/utmt/rooms/creating new rooms/preperation"
+              - name: Design
+                ref: "/utmt/rooms/creating new rooms/design"
+              - name: Transitions
+                ref: "/utmt/rooms/creating new rooms/transitions"
+  - name: Publishing your Mod
+    ref: "/publishing mod"
+    sub:
+      - name: Preparing
+        ref: "/publishing mod/prep"
+      - name: Port to other Operating Systems
+        ref: "/publishing mod/glenn"
+      - name: Make your Mod AM2RLauncher compatible
+        ref: "/publishing mod/atomic"
+      - name: Upload your Mod
+        ref: "/publishing mod/upload"
+      - name: Niceties after Release
+        ref: "/publishing mod/postrelease"
+

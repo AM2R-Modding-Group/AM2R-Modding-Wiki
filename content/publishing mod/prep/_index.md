@@ -1,6 +1,5 @@
 ---
 title: Preparing
-weight: 0
 resources:
   - name: structureWin
     src: "structureWin.png"

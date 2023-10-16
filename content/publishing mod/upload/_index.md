@@ -1,6 +1,5 @@
 ---
 title: Upload your Mod
-weight: 3
 
 resources:
   - name: createRepo

@@ -1,6 +1,5 @@
 ---
 title: Make your Mod AM2RLauncher compatible
-weight: 2
 ---
 
 In order to make your Mod AM2RLauncher compatible, you will need to use 

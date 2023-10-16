@@ -1,6 +1,5 @@
 ---
 title: Transitions
-weight: 2
 resources:
   - name: optimalRoomUp
     src: "optimalRoomUp.png"

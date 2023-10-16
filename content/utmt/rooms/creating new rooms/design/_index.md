@@ -1,6 +1,5 @@
 ---
 title: Design
-weight: 1
 resources:
   - name: decorationTiling
     src: "decorationTiling.png"

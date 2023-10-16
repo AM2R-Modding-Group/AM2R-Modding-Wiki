@@ -1,6 +1,5 @@
 ---
 title: Port to other Operating Systems
-weight: 1
 ---
 
 Now that you have your Raw Mod for *your* Operating System, you should port your mod 
