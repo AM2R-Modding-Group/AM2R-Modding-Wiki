@@ -1,6 +1,5 @@
 ---
 title: Preperation
-weight: 0
 resources: 
   - name: roomSetup
     src: "roomSetup.png"

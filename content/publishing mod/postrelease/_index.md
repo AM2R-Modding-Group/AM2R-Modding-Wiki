@@ -1,6 +1,5 @@
 ---
 title: Niceties after Release
-weight: 4
 ---
 
 {{<todo>}}Seperate a few things from here into seperate pages.{{</todo>}}
