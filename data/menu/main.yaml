@@ -8,6 +8,24 @@ main:
         ref: "/useful links/tools"
   - name: Global Items
     ref: "/global items"
+  - name: Assets
+    ref: "/assets"
+    sub:
+      - name: Backgrounds
+        ref: "/assets/backgrounds"
+      - name: Fonts
+        ref: "/assets/fonts"
+      - name: Music
+        ref: "/assets/music"
+      - name: Shaders
+        ref: "/assets/shaders"
+      - name: Sounds
+        ref: "/assets/sounds"
+      - name: Sprites
+        ref: "/assets/sprites"
+      # Tilesets should get subcategories at one point probably. Would make things more organized I think.
+      - name: Tilesets
+        ref: "/assets/tilesets"
   - name: UndertaleModTool
     ref: "/utmt"
     sub:
