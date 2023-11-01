@@ -1,1 +1,4 @@
- 
+---
+title: Rooms
+geekdocCollapseSection: true
+--- 

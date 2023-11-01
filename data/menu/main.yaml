@@ -29,6 +29,8 @@ main:
   - name: UndertaleModTool
     ref: "/utmt"
     sub:
+      - name: Basics
+        ref: "/utmt/basics"
       - name: Custom AM2R Scripts
         ref: "/utmt/am2r-scripts"
       - name: Rooms

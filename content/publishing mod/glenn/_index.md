@@ -12,6 +12,8 @@ This tool only works with **GameMaker VM builds**, which essentially means,
 that *only* if you created your mod via a YYC build with GameMaker Studio 1.4, you are *unable* to use it. In the case you have done that, 
 see instructions further down on what you can do.
 
+Also, Glenn only was made for mods of 1.5.5 / Game Maker 1.4.1763. Future versions may not work.
+
 The project's Readme should sufficiently explain its usage, but here's a quick rundown nonetheless.
 
 1. Make sure that you don't have any functionality that's OS specific! This includes using `\` instead of `/`, 
