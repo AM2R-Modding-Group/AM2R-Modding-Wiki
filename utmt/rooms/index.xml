@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>AM2R Modding Wiki</title>
+    <title>Rooms on AM2R Modding Wiki</title>
     <link>https://am2r-modding-group.github.io/AM2R-Modding-Wiki/utmt/rooms/</link>
-    <description>Recent content on AM2R Modding Wiki</description>
+    <description>Recent content in Rooms on AM2R Modding Wiki</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://am2r-modding-group.github.io/AM2R-Modding-Wiki/utmt/rooms/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <atom:link href="https://am2r-modding-group.github.io/AM2R-Modding-Wiki/utmt/rooms/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

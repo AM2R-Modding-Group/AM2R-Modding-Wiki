@@ -5,12 +5,12 @@
     <link>https://am2r-modding-group.github.io/AM2R-Modding-Wiki/useful-links/</link>
     <description>Recent content in Useful links on AM2R Modding Wiki</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://am2r-modding-group.github.io/AM2R-Modding-Wiki/useful-links/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <atom:link href="https://am2r-modding-group.github.io/AM2R-Modding-Wiki/useful-links/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Chats</title>
       <link>https://am2r-modding-group.github.io/AM2R-Modding-Wiki/useful-links/chats/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://am2r-modding-group.github.io/AM2R-Modding-Wiki/useful-links/chats/</guid>
       <description>Links to places where you can chat about modding AM2R.
 AM2R Discord The Official AM2R Discord Server. It&amp;rsquo;s also bridged with the AM2R Matrix Space.
@@ -19,12 +19,10 @@ AM2R Matrix Space The Official AM2R Matrix Space. It&amp;rsquo;s also bridged wi
 https://matrix.to/#/#am2r:matrix.org
 AM2R Modding Discord The Discord server for all things modding related. Modding related inqueries will likely get faster answers here than in the AM2R Discord, as well as it being a bit more organized.</description>
     </item>
-    
     <item>
       <title>Tools</title>
       <link>https://am2r-modding-group.github.io/AM2R-Modding-Wiki/useful-links/tools/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://am2r-modding-group.github.io/AM2R-Modding-Wiki/useful-links/tools/</guid>
       <description>A list of tools that are useful for AM2R Modding
 UndertaleModTool Download: https://github.com/krzys-h/UndertaleModTool/releases
@@ -34,6 +32,5 @@ Glenn lets you able to port your Mod to Windows, Linux, Android and Mac.
 Atomic Download: https://github.com/AM2R-Community-Developers/Atomic/releases
 Atomic makes your mods AM2RLauncher compatible, so that other people can properly install them.</description>
     </item>
-    
   </channel>
 </rss>
