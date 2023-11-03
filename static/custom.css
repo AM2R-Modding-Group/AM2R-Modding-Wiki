@@ -4,7 +4,8 @@
 }
 
 .gdoc-markdown__figure {
-  padding: 0.4rem;
+  padding: 0.5rem;
+  margin: 0
 }
 
 /* Dark mode theming */
