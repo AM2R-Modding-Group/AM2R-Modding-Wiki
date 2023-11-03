@@ -144,4 +144,4 @@ This plays during the credits sequence. The music file is called `musCredits.ogg
 This plays when a major item has been collected. The music file is called `musItemGet.ogg`.
 
 # Secret Ending
-This track is not part of the official soundtrack. It exists in the Community Updates since version 1.4 and was made by [unknown](https://www.youtube.com/@unknown-gd6nk). The license is unknown. The music file is called `musEnding.ogg`.
+This track is not part of the official soundtrack. It exists in the Community Updates since version 1.4 and was made by [unknown](https://www.youtube.com/@unknown-gd6nk). It is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed). The music file is called `musEnding.ogg`.

@@ -94,6 +94,7 @@ The license is "USE THEM AS YOU LIKE".
 {{<columns size=large >}}
 `fontMenuSmall2` (also called `fontMenuSmall2Default` in the Community Updates) is a medium-sized pixel font.  
 It's used mostly in button tooltips ([A] - Select), but is also used on the disclaimer screen, and in the logbook menu.  
+This font also contains the Chozo alphabet, which you can get by using fullwidth capital latin characters (Ａ [U+FF21] - Ｚ [U+FF3A]). You can use an online converter for this.  
 The original font is `Glasstown NBP` made by Nate Halley at 12 em. The original seems to be from here: https://fontstruct.com/fontstructions/show/712873/glasstown_nbp.  
 The license is [Creative Commons BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/).
 <--->

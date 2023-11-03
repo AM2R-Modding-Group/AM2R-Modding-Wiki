@@ -25,6 +25,7 @@ resources:
 ---
 This subsection documents the various shaders used in AM2R. Shader assets have the prefix `sh`.
 {{<todo>}} Am2r 1.0 used a shader for gravity suit. document that one more{{</todo>}}
+{{<todo>}} document more on how to use them as a developer? maybe in a seperate page?{{</todo>}}
 AM2R 1.0 uses a shader internally known as `shReplaceColor`. Not much is known about it, but Rivals of Aether also has a similar if not the same shader. It seems to originate from GMLscripts.com, but it also could've been a shader shipped with old GameMaker versions or from GMC. DoctorM64 did not write it himself.  
 
 This shader was originally used in AM2R 1.0 to palette swap the Varia Suit sprites to Gravity Suit. However, since many GPUs had issues running the shader, thus leaving Gravity Suit to look the same as Varia Suit, it went unused in 1.1 in favour of prerendered sprites. Not much documentation has been done in looking into how exactly the shader worked, on neither a code side, nor a dev-usage side.
@@ -35,7 +36,10 @@ The Community Updates uses two shaders:
 Internally known as `shPaletteSwap`. It can be found for free here: https://pixelatedpope.itch.io/retro-palette-swapper. Note that for the versions 1.5.5 and lower, you want to use the `Retro Pal Swapper 2.1 for GMS1` asset.
 
 The shader is used on desktop machines as an extra to palette swap Samus and Metroids. It is disabled on Android systems. However, despite that, similar to the early 1.0 color repalce shader, it also has issues running on many GPUs, especially laptop or other lower-end ones.
-{{<todo>}} document more {{</todo>}}
+The Metroid palettes are applied by default on Fusion Mode to make the Metroids more Fusion-themed. You can find them in `mods/palettes/monsters` in the asset directory. In there, there's also a `config.ini` file to determine whether the palettes should always be applied, or only on Fusion Mode.
+The Samus palettes are applied from `mods/palettes/suits` in the asset directory. These only get applied if the Fusion Suit variant in Extras is *not* set to M:SR. Note that the M:SR variant also uses the palette shader.
+
+The user is able to modify the Metroid and Samus palettes. The image needs to be 2 pixels wide and can be any pixels high. The second color in a row determines what all instances of the first color should be replaced with.
 
 ## PixHammer's GameBoy Shader
 Internally known as `shGameBoy`. It can be bought for 2$ here: https://pixhammer.itch.io/gameboy-shader. 
