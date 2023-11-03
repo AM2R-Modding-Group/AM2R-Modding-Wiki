@@ -12,7 +12,7 @@
 <meta name="generator" content="Hugo 0.120.3">
 
 
-  <meta name="description" content="This subsection documents the various shaders used in AM2R. Shader assets have the prefix sh. TODO: Am2r 1.0 used a shader for gravity suit. document that one more AM2R 1.0 uses a shader internally known as shReplaceColor. Not much is known about it, but Rivals of Aether also has a similar if not the same shader. It seems to originate from GMLscripts.com, but it also could&rsquo;ve been a shader shipped with old GameMaker versions or from GMC." />
+  <meta name="description" content="This subsection documents the various shaders used in AM2R. Shader assets have the prefix sh. TODO: Am2r 1.0 used a shader for gravity suit. document that one more TODO: document more on how to use them as a developer? maybe in a seperate page? AM2R 1.0 uses a shader internally known as shReplaceColor. Not much is known about it, but Rivals of Aether also has a similar if not the same shader." />
 
     <title>Shaders | AM2R Modding Wiki</title>
 
@@ -38,20 +38,20 @@
     content="Shaders"
   />
   <meta property="og:site_name" content="AM2R Modding Wiki" />
-  <meta property="og:description" content="This subsection documents the various shaders used in AM2R. Shader assets have the prefix sh. TODO: Am2r 1.0 used a shader for gravity suit. document that one more AM2R 1.0 uses a shader internally known as shReplaceColor. Not much is known about it, but Rivals of Aether also has a similar if not the same shader. It seems to originate from GMLscripts.com, but it also could’ve been a shader shipped with old GameMaker versions or from GMC." />
+  <meta property="og:description" content="This subsection documents the various shaders used in AM2R. Shader assets have the prefix sh. TODO: Am2r 1.0 used a shader for gravity suit. document that one more TODO: document more on how to use them as a developer? maybe in a seperate page? AM2R 1.0 uses a shader internally known as shReplaceColor. Not much is known about it, but Rivals of Aether also has a similar if not the same shader." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://am2r-modding-group.github.io/AM2R-Modding-Wiki/assets/shaders/" />
 
 <meta property="article:section" content="Assets" />
     <meta
       property="article:modified_time"
-      content="2023-11-03T19:08:05+01:00"
+      content="2023-11-04T00:54:42+01:00"
     />
 
 
   <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="Shaders" />
-  <meta name="twitter:description" content="This subsection documents the various shaders used in AM2R. Shader assets have the prefix sh. TODO: Am2r 1.0 used a shader for gravity suit. document that one more AM2R 1.0 uses a shader internally known as shReplaceColor. Not much is known about it, but Rivals of Aether also has a similar if not the same shader. It seems to originate from GMLscripts.com, but it also could’ve been a shader shipped with old GameMaker versions or from GMC." />
+  <meta name="twitter:description" content="This subsection documents the various shaders used in AM2R. Shader assets have the prefix sh. TODO: Am2r 1.0 used a shader for gravity suit. document that one more TODO: document more on how to use them as a developer? maybe in a seperate page? AM2R 1.0 uses a shader internally known as shReplaceColor. Not much is known about it, but Rivals of Aether also has a similar if not the same shader." />
 
 
   <script type="application/ld+json">
@@ -62,8 +62,8 @@
       "name": "Shaders",
       "url" : "https://am2r-modding-group.github.io/AM2R-Modding-Wiki/assets/shaders/",
       "headline": "Shaders",
-      "description": "This subsection documents the various shaders used in AM2R. Shader assets have the prefix sh. TODO: Am2r 1.0 used a shader for gravity suit. document that one more AM2R 1.0 uses a shader internally known as shReplaceColor. Not much is known about it, but Rivals of Aether also has a similar if not the same shader. It seems to originate from GMLscripts.com, but it also could’ve been a shader shipped with old GameMaker versions or from GMC.",
-      "wordCount" : "415",
+      "description": "This subsection documents the various shaders used in AM2R. Shader assets have the prefix sh. TODO: Am2r 1.0 used a shader for gravity suit. document that one more TODO: document more on how to use them as a developer? maybe in a seperate page? AM2R 1.0 uses a shader internally known as shReplaceColor. Not much is known about it, but Rivals of Aether also has a similar if not the same shader.",
+      "wordCount" : "555",
       "license": "CC BY-SA 4.0",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
@@ -75,7 +75,7 @@
       "copyrightYear" : "0001",
       "dateCreated": "0001-01-01T00:00:00.00Z",
       "datePublished": "0001-01-01T00:00:00.00Z",
-      "dateModified": "2023-11-03T19:08:05.00Z",
+      "dateModified": "2023-11-04T00:54:42.00Z",
       "publisher":{
           "@type":"Organization",
           "name": "AM2R Modding Wiki",
@@ -1611,6 +1611,14 @@
   <div class="gdoc-hint__text">Am2r 1.0 used a shader for gravity suit. document that one more</div>
 </blockquote>
 
+<blockquote class="gdoc-hint">
+  <div class="gdoc-hint__title flex align-center">
+      <img alt="todo!" src="/AM2R-Modding-Wiki/logo.png" style="margin-right: 1rem">
+      <span style="color: white">TODO:</span>
+  </div>
+  <div class="gdoc-hint__text">document more on how to use them as a developer? maybe in a seperate page?</div>
+</blockquote>
+
 AM2R 1.0 uses a shader internally known as <code>shReplaceColor</code>. Not much is known about it, but Rivals of Aether also has a similar if not the same shader. It seems to originate from GMLscripts.com, but it also could&rsquo;ve been a shader shipped with old GameMaker versions or from GMC. DoctorM64 did not write it himself.</p>
 <p>This shader was originally used in AM2R 1.0 to palette swap the Varia Suit sprites to Gravity Suit. However, since many GPUs had issues running the shader, thus leaving Gravity Suit to look the same as Varia Suit, it went unused in 1.1 in favour of prerendered sprites. Not much documentation has been done in looking into how exactly the shader worked, on neither a code side, nor a dev-usage side.</p>
 <p>The Community Updates uses two shaders:</p>
@@ -1628,14 +1636,9 @@ AM2R 1.0 uses a shader internally known as <code>shReplaceColor</code>. Not much
   href="https://pixelatedpope.itch.io/retro-palette-swapper"
 >https://pixelatedpope.itch.io/retro-palette-swapper</a>. Note that for the versions 1.5.5 and lower, you want to use the <code>Retro Pal Swapper 2.1 for GMS1</code> asset.</p>
 <p>The shader is used on desktop machines as an extra to palette swap Samus and Metroids. It is disabled on Android systems. However, despite that, similar to the early 1.0 color repalce shader, it also has issues running on many GPUs, especially laptop or other lower-end ones.
-<blockquote class="gdoc-hint">
-  <div class="gdoc-hint__title flex align-center">
-      <img alt="todo!" src="/AM2R-Modding-Wiki/logo.png" style="margin-right: 1rem">
-      <span style="color: white">TODO:</span>
-  </div>
-  <div class="gdoc-hint__text">document more</div>
-</blockquote>
-</p>
+The Metroid palettes are applied by default on Fusion Mode to make the Metroids more Fusion-themed. You can find them in <code>mods/palettes/monsters</code> in the asset directory. In there, there&rsquo;s also a <code>config.ini</code> file to determine whether the palettes should always be applied, or only on Fusion Mode.
+The Samus palettes are applied from <code>mods/palettes/suits</code> in the asset directory. These only get applied if the Fusion Suit variant in Extras is <em>not</em> set to M:SR. Note that the M:SR variant also uses the palette shader.</p>
+<p>The user is able to modify the Metroid and Samus palettes. The image needs to be 2 pixels wide and can be any pixels high. The second color in a row determines what all instances of the first color should be replaced with.</p>
 <div class="flex align-center gdoc-page__anchorwrap">
     <h2 id="pixhammers-gameboy-shader"
     >
