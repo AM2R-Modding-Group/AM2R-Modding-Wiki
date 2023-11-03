@@ -45,7 +45,7 @@
 <meta property="article:section" content="Assets" />
     <meta
       property="article:modified_time"
-      content="2023-10-27T17:46:20+02:00"
+      content="2023-11-03T19:08:05+01:00"
     />
 
 
@@ -63,7 +63,7 @@
       "url" : "https://am2r-modding-group.github.io/AM2R-Modding-Wiki/assets/shaders/",
       "headline": "Shaders",
       "description": "This subsection documents the various shaders used in AM2R. Shader assets have the prefix sh. TODO: Am2r 1.0 used a shader for gravity suit. document that one more AM2R 1.0 uses a shader internally known as shReplaceColor. Not much is known about it, but Rivals of Aether also has a similar if not the same shader. It seems to originate from GMLscripts.com, but it also could’ve been a shader shipped with old GameMaker versions or from GMC.",
-      "wordCount" : "141",
+      "wordCount" : "415",
       "license": "CC BY-SA 4.0",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
@@ -75,7 +75,7 @@
       "copyrightYear" : "0001",
       "dateCreated": "0001-01-01T00:00:00.00Z",
       "datePublished": "0001-01-01T00:00:00.00Z",
-      "dateModified": "2023-10-27T17:46:20.00Z",
+      "dateModified": "2023-11-03T19:08:05.00Z",
       "publisher":{
           "@type":"Organization",
           "name": "AM2R Modding Wiki",
@@ -1612,6 +1612,7 @@
 </blockquote>
 
 AM2R 1.0 uses a shader internally known as <code>shReplaceColor</code>. Not much is known about it, but Rivals of Aether also has a similar if not the same shader. It seems to originate from GMLscripts.com, but it also could&rsquo;ve been a shader shipped with old GameMaker versions or from GMC. DoctorM64 did not write it himself.</p>
+<p>This shader was originally used in AM2R 1.0 to palette swap the Varia Suit sprites to Gravity Suit. However, since many GPUs had issues running the shader, thus leaving Gravity Suit to look the same as Varia Suit, it went unused in 1.1 in favour of prerendered sprites. Not much documentation has been done in looking into how exactly the shader worked, on neither a code side, nor a dev-usage side.</p>
 <p>The Community Updates uses two shaders:</p>
 <div class="flex align-center gdoc-page__anchorwrap">
     <h2 id="pixelated-popes-retro-palette-swapper"
@@ -1626,6 +1627,15 @@ AM2R 1.0 uses a shader internally known as <code>shReplaceColor</code>. Not much
   class="gdoc-markdown__link"
   href="https://pixelatedpope.itch.io/retro-palette-swapper"
 >https://pixelatedpope.itch.io/retro-palette-swapper</a>. Note that for the versions 1.5.5 and lower, you want to use the <code>Retro Pal Swapper 2.1 for GMS1</code> asset.</p>
+<p>The shader is used on desktop machines as an extra to palette swap Samus and Metroids. It is disabled on Android systems. However, despite that, similar to the early 1.0 color repalce shader, it also has issues running on many GPUs, especially laptop or other lower-end ones.
+<blockquote class="gdoc-hint">
+  <div class="gdoc-hint__title flex align-center">
+      <img alt="todo!" src="/AM2R-Modding-Wiki/logo.png" style="margin-right: 1rem">
+      <span style="color: white">TODO:</span>
+  </div>
+  <div class="gdoc-hint__text">document more</div>
+</blockquote>
+</p>
 <div class="flex align-center gdoc-page__anchorwrap">
     <h2 id="pixhammers-gameboy-shader"
     >
@@ -1639,6 +1649,175 @@ AM2R 1.0 uses a shader internally known as <code>shReplaceColor</code>. Not much
   class="gdoc-markdown__link"
   href="https://pixhammer.itch.io/gameboy-shader"
 >https://pixhammer.itch.io/gameboy-shader</a>.</p>
+<p>The shader is used as an extra to limit the whole screen to 4 colors, similar to the GameBoy.
+The available default available presets are these:
+
+
+
+<div class="gdoc-columns gdoc-columns--regular flex flex-gap flex-mobile-column">
+    <div class="gdoc-columns__content gdoc-markdown--nested flex-even">
+        <div class="flex justify-center">
+    <figure
+      class="gdoc-markdown__figure"
+    >
+      <a class="gdoc-markdown__link--raw" href="https://am2r-modding-group.github.io/AM2R-Modding-Wiki/assets/shaders/olive.png">
+        <picture>
+            <source
+                srcset="https://am2r-modding-group.github.io/AM2R-Modding-Wiki/assets/shaders/olive_hua76f07721ad86c59693d09e0168b81ff_103_320x0_resize_box_3.png"
+            />
+          <img loading="lazy"
+                src="https://am2r-modding-group.github.io/AM2R-Modding-Wiki/assets/shaders/olive_hua76f07721ad86c59693d09e0168b81ff_103_1800x0_resize_box_3.png"
+              alt="Olive"
+          />
+        </picture>
+      </a>
+          <figcaption>
+            Olive
+          </figcaption>
+    </figure>
+  </div>
+</div>
+    <div class="gdoc-columns__content gdoc-markdown--nested flex-even">
+        <div class="flex justify-center">
+    <figure
+      class="gdoc-markdown__figure"
+    >
+      <a class="gdoc-markdown__link--raw" href="https://am2r-modding-group.github.io/AM2R-Modding-Wiki/assets/shaders/blue.png">
+        <picture>
+            <source
+                srcset="https://am2r-modding-group.github.io/AM2R-Modding-Wiki/assets/shaders/blue_hua76f07721ad86c59693d09e0168b81ff_103_320x0_resize_box_3.png"
+            />
+          <img loading="lazy"
+                src="https://am2r-modding-group.github.io/AM2R-Modding-Wiki/assets/shaders/blue_hua76f07721ad86c59693d09e0168b81ff_103_1800x0_resize_box_3.png"
+              alt="Blue"
+          />
+        </picture>
+      </a>
+          <figcaption>
+            Blue
+          </figcaption>
+    </figure>
+  </div>
+</div>
+    <div class="gdoc-columns__content gdoc-markdown--nested flex-even">
+        <div class="flex justify-center">
+    <figure
+      class="gdoc-markdown__figure"
+    >
+      <a class="gdoc-markdown__link--raw" href="https://am2r-modding-group.github.io/AM2R-Modding-Wiki/assets/shaders/blackandwhite.png">
+        <picture>
+            <source
+                srcset="https://am2r-modding-group.github.io/AM2R-Modding-Wiki/assets/shaders/blackandwhite_hua76f07721ad86c59693d09e0168b81ff_103_320x0_resize_box_3.png"
+            />
+          <img loading="lazy"
+                src="https://am2r-modding-group.github.io/AM2R-Modding-Wiki/assets/shaders/blackandwhite_hua76f07721ad86c59693d09e0168b81ff_103_1800x0_resize_box_3.png"
+              alt="Black&amp;White"
+          />
+        </picture>
+      </a>
+          <figcaption>
+            Black&amp;White
+          </figcaption>
+    </figure>
+  </div>
+</div>
+    <div class="gdoc-columns__content gdoc-markdown--nested flex-even">
+        <div class="flex justify-center">
+    <figure
+      class="gdoc-markdown__figure"
+    >
+      <a class="gdoc-markdown__link--raw" href="https://am2r-modding-group.github.io/AM2R-Modding-Wiki/assets/shaders/virtualtroid.png">
+        <picture>
+            <source
+                srcset="https://am2r-modding-group.github.io/AM2R-Modding-Wiki/assets/shaders/virtualtroid_hu3727b6ceb7f36d3a885cbbc1cd4ee4e5_99_320x0_resize_box_3.png"
+            />
+          <img loading="lazy"
+                src="https://am2r-modding-group.github.io/AM2R-Modding-Wiki/assets/shaders/virtualtroid_hu3727b6ceb7f36d3a885cbbc1cd4ee4e5_99_1800x0_resize_box_3.png"
+              alt="Virtualtroid"
+          />
+        </picture>
+      </a>
+          <figcaption>
+            Virtualtroid
+          </figcaption>
+    </figure>
+  </div>
+</div>
+    <div class="gdoc-columns__content gdoc-markdown--nested flex-even">
+        <div class="flex justify-center">
+    <figure
+      class="gdoc-markdown__figure"
+    >
+      <a class="gdoc-markdown__link--raw" href="https://am2r-modding-group.github.io/AM2R-Modding-Wiki/assets/shaders/green.png">
+        <picture>
+            <source
+                srcset="https://am2r-modding-group.github.io/AM2R-Modding-Wiki/assets/shaders/green_huc5092bec60cc813793f27f90f08f5347_104_320x0_resize_box_3.png"
+            />
+          <img loading="lazy"
+                src="https://am2r-modding-group.github.io/AM2R-Modding-Wiki/assets/shaders/green_huc5092bec60cc813793f27f90f08f5347_104_1800x0_resize_box_3.png"
+              alt="Green"
+          />
+        </picture>
+      </a>
+          <figcaption>
+            Green
+          </figcaption>
+    </figure>
+  </div>
+</div>
+    <div class="gdoc-columns__content gdoc-markdown--nested flex-even">
+        <div class="flex justify-center">
+    <figure
+      class="gdoc-markdown__figure"
+    >
+      <a class="gdoc-markdown__link--raw" href="https://am2r-modding-group.github.io/AM2R-Modding-Wiki/assets/shaders/customDefault.png">
+        <picture>
+            <source
+                srcset="https://am2r-modding-group.github.io/AM2R-Modding-Wiki/assets/shaders/customDefault_hua76f07721ad86c59693d09e0168b81ff_103_320x0_resize_box_3.png"
+            />
+          <img loading="lazy"
+                src="https://am2r-modding-group.github.io/AM2R-Modding-Wiki/assets/shaders/customDefault_hua76f07721ad86c59693d09e0168b81ff_103_1800x0_resize_box_3.png"
+              alt="Custom, with default values in modifiers.ini"
+          />
+        </picture>
+      </a>
+          <figcaption>
+            Custom, with default values in modifiers.ini
+          </figcaption>
+    </figure>
+  </div>
+</div>
+    <div class="gdoc-columns__content gdoc-markdown--nested flex-even">
+        <div class="flex justify-center">
+    <figure
+      class="gdoc-markdown__figure"
+    >
+      <a class="gdoc-markdown__link--raw" href="https://am2r-modding-group.github.io/AM2R-Modding-Wiki/assets/shaders/customMissing.png">
+        <picture>
+            <source
+                srcset="https://am2r-modding-group.github.io/AM2R-Modding-Wiki/assets/shaders/customMissing_hua76f07721ad86c59693d09e0168b81ff_103_320x0_resize_box_3.png"
+            />
+          <img loading="lazy"
+                src="https://am2r-modding-group.github.io/AM2R-Modding-Wiki/assets/shaders/customMissing_hua76f07721ad86c59693d09e0168b81ff_103_1800x0_resize_box_3.png"
+              alt="Custom, with default values if the keys in modifier.ini are missing"
+          />
+        </picture>
+      </a>
+          <figcaption>
+            Custom, with default values if the keys in modifier.ini are missing
+          </figcaption>
+    </figure>
+  </div>
+</div>
+</div>
+</p>
+<p>The values are harcoded several places:</p>
+<ul>
+<li>The <code>set_8bit_shader</code> script for <code>Olive</code> to <code>Green</code></li>
+<li>The <code>modifiers.ini</code> file for one Custom variant</li>
+<li>the <code>scr_load_scripts</code> script for the other Custom variant</li>
+</ul>
+<p>The user is able to modify the <code>Custom</code> variant in the <code>modifiers.ini</code>, by changing the keys <code>CustomColorXValueY</code>, where X is a number from 1 to 4, and Y is a number from 1 to 3. The colors are sorted from darkest to brightest (<code>CustomColor1ValueY</code> is darkest, <code>CustomColor4ValueY</code> is brightest), and then by red, green and blue values (<code>CustomColorXValue1</code> is the red component, <code>CustomColorXValue3</code> is the blue component). The values can take in numbers from 0 to 255.</p>
 
   </article>
 
