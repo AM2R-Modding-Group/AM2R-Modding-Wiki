@@ -95,8 +95,8 @@ Automatic There is an UTMT script that will simplify the room creation process."
 
 
     
-  <script src="/AM2R-Modding-Wiki/js/colortheme-d3e4d351.bundle.min.js"></script>
-<script src="/AM2R-Modding-Wiki/js/main-924a1933.bundle.min.js"></script>
+  <script src="/AM2R-Modding-Wiki/js/colortheme-5cd55a83.bundle.min.js"></script>
+<script src="/AM2R-Modding-Wiki/js/main-09678822.bundle.min.js"></script>
 
 <link
   rel="preload"
@@ -115,12 +115,12 @@ Automatic There is an UTMT script that will simplify the room creation process."
 
 <link
   rel="preload"
-  href="/AM2R-Modding-Wiki/main-252d384c.min.css"
+  href="/AM2R-Modding-Wiki/main-a559ecaa.min.css"
   as="style"
 />
 <link
   rel="stylesheet"
-  href="/AM2R-Modding-Wiki/main-252d384c.min.css"
+  href="/AM2R-Modding-Wiki/main-a559ecaa.min.css"
   media="all"
 />
 
@@ -228,9 +228,7 @@ Automatic There is an UTMT script that will simplify the room creation process."
       
         <span>
           <a
-            href="
-              https://github.com/AM2R-Modding-Group/AM2R-Modding-Wiki/
-            "
+            href="https://github.com/AM2R-Modding-Group/AM2R-Modding-Wiki/"
             class="gdoc-header__link"
           >
             <svg class="gdoc-icon gdoc_github">
@@ -536,7 +534,7 @@ Automatic There is an UTMT script that will simplify the room creation process."
                 <svg class="gdoc-icon toggle gdoc_keyboard_arrow_left">
                   <use xlink:href="#gdoc_keyboard_arrow_left"></use>
                 </svg>
-                <svg class="gdoc-icon toggle gdoc_keyboard_arrow_down hidden">
+                <svg class="gdoc-icon toggle gdoc_keyboard_arrow_down">
                   <use xlink:href="#gdoc_keyboard_arrow_down"></use>
                 </svg>
               
@@ -1684,36 +1682,28 @@ If you were adding a room inside Golden Temple for example, you would name it so
     <div class="gdoc-markdown--nested gdoc-tabs__content">
       <p>To get started, create a new room by right-clicking on <code>Rooms</code> in the viewer on the left and then click <code>add</code>. Now you will see 3 things;</p>
 <ul>
-<li>
-<p>At the top left, a list of all objects that are in your room.</p>
-</li>
-<li>
-<p>At the top right, a set of values, corresponding to the element that you currently have selected.</p>
-</li>
-<li>
-<p>At the bottom, a visual overview of your room. If you&rsquo;re adding a new room, this will be completely gray.</p>
+<li>At the top left, a list of all objects that are in your room.</li>
+<li>At the top right, a set of values, corresponding to the element that you currently have selected.</li>
+<li>At the bottom, a visual overview of your room. If you&rsquo;re adding a new room, this will be completely gray.</li>
+</ul>
 <div class="flex justify-center">
-  <figure
-    class="gdoc-markdown__figure"
-  >
-    <a class="gdoc-markdown__link--raw" href="https://am2r-modding-group.github.io/AM2R-Modding-Wiki/utmt/rooms/creating-new-rooms/preperation/roomOnCreate.png">
-      <picture>
-          <source
-              srcset="https://am2r-modding-group.github.io/AM2R-Modding-Wiki/utmt/rooms/creating-new-rooms/preperation/roomOnCreate_huaa29f429fe92b1ccee202af82a6fa88b_117080_600x0_resize_box_3.png"
+    <figure class="gdoc-markdown__figure">
+      <a class="gdoc-markdown__link--raw" href="https://am2r-modding-group.github.io/AM2R-Modding-Wiki/utmt/rooms/creating-new-rooms/preperation/roomOnCreate.png">
+        <picture>
+            <source
+                srcset="https://am2r-modding-group.github.io/AM2R-Modding-Wiki/utmt/rooms/creating-new-rooms/preperation/roomOnCreate_huaa29f429fe92b1ccee202af82a6fa88b_117080_600x0_resize_box_3.png"
+            />
+          <img loading="lazy"
+                src="https://am2r-modding-group.github.io/AM2R-Modding-Wiki/utmt/rooms/creating-new-rooms/preperation/roomOnCreate_huaa29f429fe92b1ccee202af82a6fa88b_117080_1800x0_resize_box_3.png"
+              alt="This is how it will look when first adding a new room"
           />
-        <img loading="lazy"
-              src="https://am2r-modding-group.github.io/AM2R-Modding-Wiki/utmt/rooms/creating-new-rooms/preperation/roomOnCreate_huaa29f429fe92b1ccee202af82a6fa88b_117080_1800x0_resize_box_3.png"
-            alt="This is how it will look when first adding a new room"
-        />
-      </picture>
-    </a>
+        </picture>
+      </a>
         <figcaption>
           This is how it will look when first adding a new room
         </figcaption>
-  </figure>
-</div>
-</li>
-</ul>
+    </figure>
+  </div>
 <p>When creating a new room, make <strong>absolutely</strong> sure the dimensions are multiples of <code>320</code> x <code>240</code>. Having different room dimensions will cause lots of troubles. Also make sure that the room speed (<code>Speed</code>) is set to <code>60</code> as that&rsquo;s the framerate AM2R runs at. Entering different values will lead to the room being slowed-down or sped up.<br>
 You probably also want to give your room a name. For this, it is recommended to follow the naming convention of all the other rooms in the game: start with <code>rm_</code>, then the area your room belongs to (<code>a0</code>, <code>a1</code>, <code>a2</code>, etc.), a letter to denote which subsection of that area you are in (<code>h</code> for outside, and then <code>a</code>, <code>b</code>, etc.) and finally the number of the room itself (<code>01</code>, <code>02</code>, <code>03</code>, etc.).<br>
 If you were adding a room inside Golden Temple for example, you would name it something like <code>rm_a1a13</code>. But of course you can use any names you like.</p>
@@ -1721,70 +1711,55 @@ If you were adding a room inside Golden Temple for example, you would name it so
   <div class="gdoc-hint__title flex align-center"><i class="fa note" title="Note"></i></div>
   <div class="gdoc-hint__text">UTMT does not sort things alphabetically. Instead it always puts the newest addition at the bottom of the list. This means that, if you&rsquo;re not making multiple rooms at a time, your current room will always be at the bottom of the list.</div>
 </blockquote>
-  <div class="flex justify-center">
-    <figure
-      class="gdoc-markdown__figure"
-    >
+<div class="flex justify-center">
+    <figure class="gdoc-markdown__figure">
       <a class="gdoc-markdown__link--raw" href="https://am2r-modding-group.github.io/AM2R-Modding-Wiki/utmt/rooms/creating-new-rooms/preperation/roomSetup.png">
         <picture>
-            <source
-                srcset=""
-            />
           <img loading="lazy"
                 src="https://am2r-modding-group.github.io/AM2R-Modding-Wiki/utmt/rooms/creating-new-rooms/preperation/roomSetup.png"
               alt="This is approximately how the room should look after the preparation"
           />
         </picture>
       </a>
-          <figcaption>
-            This is approximately how the room should look after the preparation
-          </figcaption>
+        <figcaption>
+          This is approximately how the room should look after the preparation
+        </figcaption>
     </figure>
   </div>
 <p>Once you have your set room size click on one of the <code>(no name)</code> elements under the backgrounds tab. Set a background by searching for <code>bgScreenGuide</code> and drag-and-droppig it into the <code>Definition</code> Space of the <code>(no name)</code> element. Enable the background afterwards.</p>
 <p>Next, click on the <code>Views</code> category, and then click on the first View. Set its <code>Pos/size</code> values to <code>0, 0, 320, 240</code>, regardless of room size. Set the <code>Port pos/size</code> values to <code>0, 0, 320, 240</code> as well. Set <code>Border</code> values to <code>160, 160</code>. Make sure <code>Speed</code> values are at <code>-1, -1</code>. Lastly, to make the camera follow the player, put <code>oCamera</code> into the <code>Follows object</code> box.</p>
 <div class="gdoc-columns gdoc-columns--regular flex flex-gap flex-mobile-column">
     <div class="gdoc-columns__content gdoc-markdown--nested flex-even">
-        <div class="flex justify-center">
-    <figure
-      class="gdoc-markdown__figure"
-    >
+      <div class="flex justify-center">
+    <figure class="gdoc-markdown__figure">
       <a class="gdoc-markdown__link--raw" href="https://am2r-modding-group.github.io/AM2R-Modding-Wiki/utmt/rooms/creating-new-rooms/preperation/screenGuideSetup.png">
         <picture>
-            <source
-                srcset=""
-            />
           <img loading="lazy"
                 src="https://am2r-modding-group.github.io/AM2R-Modding-Wiki/utmt/rooms/creating-new-rooms/preperation/screenGuideSetup.png"
               alt="This is what it should look like after setting up the &#34;bgScreenGuide&#34; element"
           />
         </picture>
       </a>
-          <figcaption>
-            This is what it should look like after setting up the &#34;bgScreenGuide&#34; element
-          </figcaption>
+        <figcaption>
+          This is what it should look like after setting up the &#34;bgScreenGuide&#34; element
+        </figcaption>
     </figure>
   </div>
 </div>
     <div class="gdoc-columns__content gdoc-markdown--nested flex-even">
-        <div class="flex justify-center">
-    <figure
-      class="gdoc-markdown__figure"
-    >
+      <div class="flex justify-center">
+    <figure class="gdoc-markdown__figure">
       <a class="gdoc-markdown__link--raw" href="https://am2r-modding-group.github.io/AM2R-Modding-Wiki/utmt/rooms/creating-new-rooms/preperation/viewsSetup.png">
         <picture>
-            <source
-                srcset=""
-            />
           <img loading="lazy"
                 src="https://am2r-modding-group.github.io/AM2R-Modding-Wiki/utmt/rooms/creating-new-rooms/preperation/viewsSetup.png"
               alt="This is how the Views should look like."
           />
         </picture>
       </a>
-          <figcaption>
-            This is how the Views should look like.
-          </figcaption>
+        <figcaption>
+          This is how the Views should look like.
+        </figcaption>
     </figure>
   </div>
 </div>
@@ -1798,8 +1773,11 @@ If you were adding a room inside Golden Temple for example, you would name it so
 
 
 
+          
+          
           <div class="gdoc-page__footer flex flex-wrap justify-between">
             
+              
 
 
 
@@ -2458,35 +2436,34 @@ If you were adding a room inside Golden Temple for example, you would name it so
 
 
 
+<span class="gdoc-page__nav">
+  
+    <a
+      class="gdoc-page__nav--prev flex align-center"
+      href="/AM2R-Modding-Wiki/utmt/rooms/creating-new-rooms/"
+      title="Creating new rooms"
+    >
+      <i class="gdoc-icon">gdoc_arrow_left_alt</i>
+      Creating new rooms
+    </a>
+  
+</span>
+<span class="gdoc-page__nav">
+  
+    <a
+      class="gdoc-page__nav--next flex align-center"
+      href="/AM2R-Modding-Wiki/utmt/rooms/creating-new-rooms/design/"
+      title="Design"
+    >
+      Design
+      <i class="gdoc-icon">gdoc_arrow_right_alt</i>
+    </a>
+  
+</span>
 
-
-  <span class="gdoc-page__nav">
-    
-      <a
-        class="gdoc-page__nav--prev flex align-center"
-        href="/AM2R-Modding-Wiki/utmt/rooms/creating-new-rooms/"
-        title="Creating new rooms"
-      >
-        <i class="gdoc-icon">gdoc_arrow_left_alt</i>
-        Creating new rooms
-      </a>
-    
-  </span>
-  <span class="gdoc-page__nav">
-    
-      <a
-        class="gdoc-page__nav--next flex align-center"
-        href="/AM2R-Modding-Wiki/utmt/rooms/creating-new-rooms/design/"
-        title="Design"
-      >
-        Design
-        <i class="gdoc-icon">gdoc_arrow_right_alt</i>
-      </a>
-    
-  </span>
-
-
+            
           </div>
+          
         </div>
       </main>
 
@@ -2529,7 +2506,7 @@ If you were adding a room inside Golden Temple for example, you would name it so
     </div>
 
     
-  <script defer src="/AM2R-Modding-Wiki/js/search-9719be99.bundle.min.js"></script>
+  <script defer src="/AM2R-Modding-Wiki/js/search-95c697e2.bundle.min.js"></script>
 
   </body>
 </html>
