@@ -44,6 +44,12 @@ main:
                 ref: "/utmt/rooms/creating new rooms/design"
               - name: Transitions
                 ref: "/utmt/rooms/creating new rooms/transitions"
+      - name: Audio
+        sub:
+          - name: Adding Sounds and Music
+            ref:  "/utmt/audio/adding sounds and music"
+          - name: Working with Music
+            ref:  "/utmt/audio/working with music"
   - name: Publishing your Mod
     ref: "/publishing mod"
     sub:

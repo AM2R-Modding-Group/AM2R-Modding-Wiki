@@ -1,9 +1,5 @@
 ---
-title: Working with Audio
+title: Audio
+geekdocCollapseSection: true
 ---
 
-{{<todo>}} Make this page not blank {{</todo>}}
-
-{{<todo>}} Explain differences in how sounds and music are handled {{</todo>}}
-
-{{<toc-tree>}}
