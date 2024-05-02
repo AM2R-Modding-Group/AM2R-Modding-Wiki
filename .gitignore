@@ -9,3 +9,4 @@
 
 # hugo
 .hugo_build.lock
+/public/
